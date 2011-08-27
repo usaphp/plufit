@@ -1,0 +1,79 @@
+body{
+	background:url(images/cross-pattern.png) repeat #fed74e;
+	color:#111;
+}
+
+/* =======================================================================================
+										HEADER
+======================================================================================= */
+#header{
+	background:#FFF;
+	background:rgba(255,255,255,0.95);
+}
+	#social-networks{
+		background:rgba(255,255,255, 0.2);
+		-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.3);
+		-moz-box-shadow:0 1px 0 rgba(255,255,255,0.3);
+		-o-box-shadow:0 1px 0 rgba(255,255,255,0.3);
+		box-shadow:0 1px 0 rgba(255,255,255,0.3);
+	}
+
+/* =======================================================================================
+										Body
+======================================================================================= */
+a, a.more-link p{
+	color:#111;
+	text-decoration:underline;
+}
+.box-content, .page-content, .flickr_badge_image, .jta-tweet-profile-image, .post-thumb{
+	background:#FFF;
+	background:rgba(255,255,255,0.8);
+	-webkit-box-shadow:1px 1px 0 #fff inset;
+	-moz-box-shadow:none;
+	-o-box-shadow:none;
+	box-shadow:1px 1px 0 #fff inset;
+}
+
+.page-content{background:#FFF;}
+
+.postmetadata{
+	background:none;
+	border-top:4px solid #FFF;
+}
+.entry{
+	background:none;
+	border-bottom:4px solid #FFF;
+}
+
+.post-info p, #archives-page .box .post-info p, .jta-tweet-timestamp, cite, .box, .box blockquote, blockquote, .entry, .postmetadata, .postmetadata a, ol.commentlist li, .comment-date, .reply a{
+	color:#222;
+}
+h1, h1 a, h2, h2 a, .box h2, #page h2, #full-page h2, h3, h3 a, #page h3, #sidebar h3 a, .widget ul h3 a, .widget .cat-post-item h3 a, .recent-posts h3 a, h4, h5, h6{
+    text-shadow:none;
+	color:#111;
+}
+	
+/* =======================================================================================
+										Sidebar
+======================================================================================= */
+
+h3.widget-title{
+	background-color:#454545;
+	background-color:rgba(0,0,0,0.85);
+}
+.widget ul h3 a, .widget .cat-post-item h3 a, .recent-posts h3 a{
+	color:#111;	
+}
+
+/* =======================================================================================
+										Footer 
+======================================================================================= */
+#footer{
+	background:#FFF;
+	background:rgba(255,255,255,0.95);
+	border-top:1px solid rgb(255,255,255);
+	border-bottom:none 0;
+}
+#footer a{
+	text-decoration:underline;
+}

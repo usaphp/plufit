@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shaken Grid (Premium) Documentation</title>
+
+<link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+<div id="full-page">
+<div class="page-content post">
+<div class="page-entry">
+
+<h1>Documentation (last updated 10.6.2010)</h1>
+<p><strong>TABLE OF CONTENTS:</strong></p>
+<ul>
+  <li><a href="#markup">Markup and Style</a></li>
+  <li><a href="#browsers">Supported Web Browsers</a></li>
+  <li><a href="#image-dimensions">Image dimensions</a></li>
+  <li><a href="#feat-img">Setting featured images</a></li>
+  <li><a href="#menus">Menu management</a>
+    <ul>
+      <li><a href="#cat-dropdown">Categories drop-down</a></li>
+      <li><a href="#dropdown-graphic">Adding the drop-down indicator graphic</a></li>
+    </ul>
+  </li>
+  <li><a href="#widgets">Widgetzed areas</a></li>
+  <li><a href="#theme-options">Theme Options</a>
+    <ul>
+      <li><a href="#colors">Selecting Colors</a></li>
+    </ul>
+  </li>
+  <li><a href="#support">Support &amp; Feature Requests</a></li>
+  <li><a href="#updates">Updates</a></li>
+</ul>
+
+<hr />
+
+<h2><a name="markup" id="markup">Markup and Style</a></h2>
+
+Shaken Grid is built on HTML5, CSS3, and a little bit of jQuery.  The grid structure is controlled by the <a href="http://desandro.com/resources/jquery-masonry/" target="_blank">jQuery Masonry plugin</a>. The main CSS file (<em>style.css</em>) is heavily commented and includes an index at the top to help users navigate through the styles. If you have customizations to make, I recommend adding the CSS changes to <em>skins/custom.css</em> and then activating the Custom skin under the theme options.  While Shaken Grid uses cutting edge techniques, less-cool web browsers (Internet Explorer) are still supported, which leads us to our next section.
+
+<hr />
+
+<h2><a name="browsers" id="browsers">B) Supported Web Browsers</a></h2>
+<p>Shaken Grid has been tested on all modern web browsers; Firefox 3.6.6, Chrome, and Safari.  It has also been tested on Internet Explorer 8 and will display similarly (although lacks the CSS3 visual enhancements).</p>
+
+<hr />
+
+<h2><a name="image-dimensions" id="image-dimensions">C) Image Dimensions</a></h2>
+
+<p>Shaken Grid supports the post-thumbnail/featured image feature built into WordPress. By using this method, it will generate five versions of the image you upload, all sized to the correct dimensions for the different parts of the site that it may show up on.</p>
+
+<ul>
+  <li><strong>“Tiny”: </strong>Max width = 135</li>
+  <li><strong>“Default”: </strong>Max width = 310</li>
+  <li><strong>“Medium”: </strong>Max width = 485</li>
+  <li><strong>“Large”: </strong>Max width = 660</li>
+  <li><strong>Sidebar Thumbnail: </strong>75 x 75</li>
+</ul>
+
+<hr />
+
+<h2><a name="feat-img" id="feat-img">D) Setting featured images</a></h2>
+<img title="Featured Image" src="readme-images/feat-img.jpg" alt="" width="291" height="70" class="alignright" />
+
+<p>Adding featured images to your posts is extremely easy. Simply follow the steps below:</p>
+<ol>
+  <li>On the <strong>Write -&gt; Post</strong> page, find the “Featured Image” box (usually on the right sidebar) and click the<strong>Set featured image</strong> link.</li>
+  <li>Upload your featured image and then click <strong>Use as featured image</strong>. WordPress will then automatically create images with the correct dimensions.</li>
+</ol>
+
+<hr />
+
+<h2><a name="menus" id="menus">E) Menu Management</a></h2>
+<img title="Menu Location" src="readme-images/menu.jpg" alt="" width="288" height="182" class="alignright" />
+
+<img title="Parent and Category Link" src="readme-images/parent.jpg" alt="" width="288" height="182" class="alignright" />
+
+<iframe src="http://player.vimeo.com/video/15258932?byline=0&amp;portrait=0&amp;color=ffffff" width="590" height="376" frameborder="0"></iframe>
+
+<p>To create a custom menu for your header navigation and include custom links and category links go to <strong>Appearance -&gt; Menus</strong>. Create your menu, save it, and then assign it to the “Header Menu” in the <strong>Theme Locations</strong> box on the left sidebar (see screenshot).</p>
+<h3><a name="cat-dropdown" id="cat-dropdown">I. Categories Drop-down</a></h3>
+<p>To create a Categories drop-down list like in this theme demo, add a custom link with the label of “Categories” and with the URL set to “#” (without the quote marks and without http:// in front of it). Then, add your categories to your menu and drag them underneath the Categories link.</p>
+<h3><a name="dropdown-graphic" id="dropdown-graphic">II. Adding the drop-down indicator graphic</a></h3>
+<p>To add the small arrow to the right of a link in your menu, follow these steps:</p>
+
+<ol>
+  <li>Click the “Screen Options” tab at the top right of your screen to drop-down several check boxes.</li>
+  <li>Underneath of “Show advanced menu properties”, click the check box next to “CSS Classes”</li>
+  <li>Click the expand arrow next to the link which you want to add the graphic to</li>
+  <li>In the box below “CSS Classes”, write “parent” (without the quote marks)</li>
+</ol>
+
+<hr />
+
+<h2><a name="widgets" id="widgets">F) Widgetized Areas</a></h2>
+
+<p>Shaken Grid features 4 widgetized areas: Page sidebar, Unique page sidebar, Gallery sidebar, and Single post page sidebar.  To add widgets go to <strong>Appearance -&gt; Widgets</strong>. To learn more about WordPress widgets, visit <a href="http://codex.wordpress.org/Appearance_Widgets_SubPanel">http://codex.wordpress.org/Appearance_Widgets_SubPanel</a>.</p>
+
+<p>Shaken Grid comes with the 8 unique widgets listed below (in addition to WordPress’s default widgets):</p>
+
+<ol>
+  <li><strong>Simple Ad Spots </strong>– Configure and display up to four 150×150 sidebar advertisements.</li>
+  <li><strong>Category Posts</strong> – Display a list of posts from a certain category.</li>
+  <li><strong>Flickr</strong> – Display your latest photos from your Flickr account.</li>
+  <li><strong>Popular Posts</strong> – List your most popular posts</li>
+  <li><strong>Related Posts</strong> – This widget will only work on single blog post pages and will display posts related to the current post being displayed.</li>
+  <li><strong>Testimonial</strong> – Display a stylized testimonial with citation</li>
+  <li><strong>Twitter</strong> – Display your latest tweets from up to <em>two </em>Twitter accounts.</li>
+  <li><strong>Share Buttons</strong> –Add social network share buttons to your sidebar</li>
+</ol>
+
+<hr />
+
+<h2><a name="theme-options" id="theme-options">G) Theme Options</a></h2>
+<p>Shaken Grid comes with a theme options panel where you can customize your theme without touching any code.  To customize your theme, click on the <strong>Theme Options</strong>tab (below the <em>Comments </em>tab) in the left sidebar of your WP-Admin.</p>
+
+<h3><a name="colors" id="colors">I) Selecting Colors</a></h3>
+<p><img src="readme-images/colorpicker.jpg" alt="" title="colorpicker" width="217" height="229" class="alignright" />To change a color of a specific element you can use the color-picker built into the theme options panel. To do so, click the input box and select the color you’d like and then click the rainbow colored circle icon at the bottom right of the color-picker box.  You can also manually type in your colors HEX value.</p>
+
+<hr />
+
+<h2><a name="support" id="support">H) Support &amp; Feature Requests</a></h2>
+
+<p>First, please read the documentation carefully before asking for support. If you are having troubles, please place a post on the <a href="http://themes.sawyerhollenshead.com/">support forum</a> AFTER you have searched and verified that no one else has posted the same issue. I will do my best to get back to you in a timely matter. Please be patient as I also freelance full time and do not have dedicated time for theme support.</p>
+
+<hr />
+
+<h2><a name="updates" id="updates">I) Updates</a></h2>
+
+<p>Updates may be released to fix bugs, improve compatibility with newer versions of WordPress, add new features, or all of the above. Unfortunately I’m unable to notify you of theme updates through your WordPress installation, but you can sign-up for my update newsletter and see what updates I’ve made to the theme at <a href="http://themes.sawyerhollenshead.com/shaken-grid/updates">themes.sawyerhollenshead.com/shaken-grid/updates</a></p>
+
+</div></div></div>
+
+</body>
+</html>

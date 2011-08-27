@@ -1,0 +1,75 @@
+*** Shaken Grid Premium Changelog ***
+
+11.25.2010 - version 1.3 
+
+  * Changed the "tweets" script to allow its usage on 
+    the gallery sidebar
+  * Fixed a bug where the share buttons were sharing the
+    wrong link when placed below the "Popular Posts" widget
+  * Fixed a bug where the Mint color scheme wasn't being
+    saved when the user selected it.
+  * Changed refrences to stylesheet_directory to
+    template_directory for better Child-theme support.
+  * Removed the rotation of the logo upon mouse hover.
+  * Gallery sidebar no longer needs activated - only needs a widget
+    added to it.
+  * Fixed an alignment issue with the logo and navigation that was
+    getting annoying to look at.
+  * Slightly rounded the corners of the boxes.
+  * Discovered that sticky posts were already supported (cool!)
+
+	Files affected:
+
+	- header.php
+	- footer.php
+	- style.css
+	- loop.php
+	- functions/admin-options.php
+	- functions/options/blog.php
+	- functions/options/stylesheet.php
+	- functions/options/copyright.php
+	- functions/widgets/twitter.php
+	- functions/widgets/popular-posts.php
+
+-----------------------------------
+
+11.1.2010 - version 1.2 
+  * Added 2 new skins (Bumble Bee + Mint)
+  * Added max-width and max-height to images in lightbox
+  * Updated Colorbox and Tweets scripts
+  * Added featured images to RSS feed
+  * Optimized js/script.js
+  * Added size options for advertisement box
+  * Removed -webkit-border-radius since newest versions 
+    no longer need it. (Yay!)
+
+-----------------------------------
+
+10.6.2010 - version 1.1
+  * Enabled WordPress's built-in custom
+    background options and replaced the 
+    option in the theme options panel
+  * Fixed CSS issues with Disqus plugin
+  * Featured images now link to post page.
+  * Added sidebar capability to homepage +
+    option to enable this in theme options.
+  * Added author links to single post pages
+    as well as option to disable this in
+    the theme options.
+  * Added theme option to hide category
+    links at the bottom of post boxes on
+    gallery pages.
+  * Updated Masonry to latest build (1.3.2)
+  * Updated README file.
+
+-----------------------------------
+
+09.24.2010 - version 1.0.1 
+  * Changed the custom field to hide 
+    a video to a checkbox.
+  * Changed the "Powered by" footer link
+
+-----------------------------------
+
+09.23.2010 - version 1.0
+  * First release!

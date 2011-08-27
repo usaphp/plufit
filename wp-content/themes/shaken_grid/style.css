@@ -1,0 +1,1254 @@
+/*
+Theme Name: Shaken Grid (Premium)
+Theme URI: http://www.themegarden.com/sawyer-hollenshead/
+Description: Shaken Grid by Sawyer Hollenshead and Shaken & Stirred Web
+Version: 1.3
+Author: Sawyer Hollenshead
+Author URI: http://www.sawyerhollenshead.com/
+--------------------------------------------------------------------------
+
+Designed by Sawyer Hollenshead - sawyerhollenshead.com
+
+Design, HTML, and CSS files are Copyright 2010 Sawyer Hollenshead
+
+--------------------------------------------------------------------------
+INDEX:
+
+1. SETUP
+- body
+- clearfix
+
+2. Typography
+- 2.1 Hyperlinks and Logo
+- 2.2 Headers (h1, h2, etc...)
+- 2.3 Lists
+- 2.4 Paragraphs
+- 2.5 Blockquotes and Citations
+- 2.6 Font Families
+
+3. Header
+- 3.1 Menus
+--  3.1.1 Second Level
+--  3.1.2 Third Level
+- 3.2 Social Networks
+
+4. Layout
+
+5. Grid blocks and Masonry plugin styles
+- 5.1 Box:hover actions
+- 5.2 Filter Navigation and Basic Form Styles
+
+6. Single Post Page
+- 6.1 Comments
+
+7. Sidebar
+- 7.1 Widgets
+--  7.1.1 Related Posts and Cat. Posts
+--  7.1.2 Twitter
+--  7.1.3 Ads
+--  7.1.4 Flicker
+--  7.1.5 Others
+
+8. Pages
+- 8.1 Archives Page
+
+9. Footer
+
+10. WordPress Specific
+
+11. Common Styles
+-------------------------------------------------------------------------- */
+
+/* =======================================================================
+								1. Setup
+======================================================================= */
+
+@import "css/reset.css";
+
+body{
+	background:#f0f0f0 url(images/noise-2.png) repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#4b5054;
+}
+
+.clearfix{
+	clear:both;
+	float:none;
+	display:block;
+}
+
+
+/* =======================================================================
+								2. Typography
+======================================================================= */
+/* =======================================
+			2.1 Hyperlinks and Logo
+======================================== */
+a, a.more-link p{
+	color:#3A80BC;
+	text-decoration:none;
+}
+	a:hover{text-decoration:underline;}
+#logo a, a #logo{
+	font-weight:normal;
+	font-size:42px;
+	color:#333;
+	margin:0 80px 0 0;
+	text-decoration:none;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+	#logo:hover a, #logo:hover{
+		opacity:0.75;
+	}
+	.wf-active #logo{
+		font-size:48px;
+		line-height:1;
+	}
+/* =======================================
+					2.2 Headers
+======================================== */
+
+h1{	font-size:40px; color:#4b5054; margin-bottom:30px;}
+		.wf-active h1{ font-size:48px; }
+		h1.post-title{
+			text-align:center;
+			margin-bottom:15px;
+		}
+#page h2, #full-page h2{
+	font-size:28px;
+	margin-bottom:20px;
+	font-weight:normal;
+	color:#4b5054;
+}
+		.post h2{
+			margin-top:30px;
+			margin-bottom:15px;
+			padding-bottom:5px;
+		}
+		.wf-active #page h2, .wf-active #full-page h2{
+			font-size:30px;
+		}
+		.box h2{
+			font-size:14px;
+			color:#333;
+			margin-bottom:10px;
+		}
+		#archives-page .box h2{font-size:18px; margin-bottom:15px;}
+			.wf-active  #archives-page .box h2{font-size:24px}
+		.box h2 a{ color:#333; text-decoration:none }
+		.box h2 a:hover{text-decoration:underline;}
+h1#logo, #logo{
+	margin-bottom:10px;
+}
+h3{
+	font-size:20px;
+	font-weight:normal;
+	margin-top:30px;
+	margin-bottom:15px;
+	padding-bottom:5px;
+	color:#4b5054;
+}
+		.wf-active h3{
+			font-size:24px;
+		}
+		h3.widget-title{
+			background:#6e7b82;
+			background:rgba(57, 75, 86, 0.7);
+			border:none 0;
+			font-size:22px;
+			padding:3px 15px;
+			color:#FFF;
+			text-shadow:0 -1px rgba(0,0,0,0.45);
+			margin-bottom:15px;
+		}
+		h3.widget-title a{ color:#FFF; }
+		.wf-active h3.widget-title{ font-size:28px; }
+h4{
+	font-size:20px;
+	margin-top:20px;
+	margin-bottom:15px;
+	padding-bottom:5px;
+}
+h5{
+	font-size:16px;
+	text-transform:uppercase;
+	margin-top:20px;
+	margin-bottom:15px;
+	padding-bottom:5px;
+}
+h6{
+	text-transform:uppercase;
+	font-weight:bold;
+	margin:5px 0 10px 0;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child{margin-top:0;}
+.post h2, .post h3, .post h4, .post h5, .post h6{margin-left:-10px;}
+
+#comments h2, #comments h3{
+	border-bottom:none 0;
+	margin-top:0;
+	margin-left:0;
+}
+
+#site-description{
+	font-weight:normal;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#999;
+	margin-top:-5px;
+}
+
+/* =======================================
+				 2.3 Lists
+======================================== */
+ul, ol{margin-left:20px;}
+ul.roman{list-style:upper-alpha;}
+ul.roman ul{list-style:upper-roman;}
+.box p, .box ul{
+	line-height:16px;
+	margin-bottom:10px;
+}
+.box, .box p, .box ul, .box ol{font-size:11px;}
+#archives-page .box, #archives-page .box p, #archives-page .box ul, #archives-page .box ol{font-size:12px;}
+	.box ul li{
+		margin-bottom:5px;
+		margin-left:5px;
+	}
+
+/* =======================================
+			2.4 Paragraphs
+======================================== */
+#page p, #full-page p{
+	margin-bottom:20px;
+	line-height:1.5;
+}
+#footer p{
+	font-size:11px;
+}
+
+hr{
+	background:none;
+	border-bottom:1px dotted #d4d4d6;
+	clear:both;
+}
+/* =======================================
+			2.5 Quotes
+======================================== */
+blockquote{
+	background:url(images/quote.png) left top no-repeat;
+	padding-left:30px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-size:14px;
+	line-height:21px;
+	color:#494949;
+	margin:0 30px 15px 30px;
+}
+	.box blockquote{font-size:12px; background:none; margin:0 0 10px 0; padding:0;}
+	#sidebar blockquote{margin:0 15px 15px;}
+cite{
+	display:block;
+	font-style:normal;
+	font-size:11px;
+	text-align:right;
+	margin:-5px 30px 20px 0;
+}
+	#sidebar cite{margin:0 15px 0 0;}
+	.box cite{margin:0 0 15px 0;}
+	
+/* =======================================
+			2.6 Font Families
+======================================== */
+
+/* ----------- Regular ----------- */
+#logo a, .postmetadata strong, h2, h3, h4, h5{
+	font-family:'Yanone Kaffeesatz', Arial, Helvetica, sans-serif;
+	font-weight:400;
+}
+
+/* ----------- Light ----------- */
+.menu li a, #site-description, h1, .postmetadata{
+	font-family:'Yanone Kaffeesatz', Arial, Helvetica, sans-serif;
+	font-weight:300;
+}
+	.wf-active #site-description, .wf-active .box h2{ font-size:16px; }
+	
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+code {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+
+.post-info p, #archives-page .box .post-info p, .jta-tweet-timestamp, cite, .box, .box blockquote{color:#6f777d;}
+
+/* =======================================================================
+								3. Header
+======================================================================= */
+#header{
+	margin-bottom:30px;
+	background:#FFF url(images/header-gradient.png) bottom repeat-x;
+	padding:30px 20px 40px 30px;
+	border-bottom:1px solid #FFF;
+}
+
+/* =======================================
+			3.1 Menu
+======================================== */
+	#site-info, .menu{
+		display:inline;
+		float:left;
+		margin:8px 15px 0 0;
+	}
+	.menu{
+		list-style:none;
+		padding:0;
+		margin:25px 0 0;
+	}
+		.menu li{
+			display:inline;
+			float:left;
+			font-size:18px;
+			margin-left:40px;
+			position:relative;
+		}
+			.wf-active .menu li{
+				font-size:22px;
+				text-transform:uppercase;
+			}
+		.menu li:first-child{margin-left:0;}
+			.menu li a{
+				text-decoration:none;
+				color:#616161;
+			}
+			.menu li.parent a{background:url(images/parent-bg.png) right no-repeat; padding-right:13px;}
+			.menu li.parent li a{background:none; padding-right:0;}
+			.menu li a:hover, .menu li.current-menu-item li a:hover, .menu li.current-menu-item a, .menu li.current_page_ancestor a, .menu li.current_page_ancestor li a:hover, .menu li.current_page_ancestor li.current-menu-item a{
+				color:#3a80bc;
+			}
+				.menu li.current-menu-item li a, .menu li.current_page_ancestor li a{color:#616161;}
+		/* ==========================
+			3.1.1 Second Level
+		===========================*/
+		.menu li li a{border-bottom:none 0;}
+		.menu ul{
+			margin:0;
+			position:absolute;
+			top:25px;
+			left:-10px;
+			width:120px;
+			background:#FFF;
+			background:rgba(255,255,255,0.87);
+			padding:12px 20px;
+			z-index:100;
+			display:none;
+			
+			-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);
+			-moz-box-shadow:0 3px 3px rgba(0,0,0,0.2);
+			-o-box-shadow:0 3px 3px rgba(0,0,0,0.2);
+			box-shadow:0 3px 3px rgba(0,0,0,0.2);
+			
+			-moz-border-radius:0 0 10px 10px;
+			-o-border-radius:0 0 10px 10px;
+			border-radius:0 0 10px 10px;
+		}
+		.menu li:hover ul{
+			display:block;
+		}
+			.menu ul li a{
+				font-size:12px;
+				font-family:Arial, Helvetica, sans-serif;
+				text-transform:none;
+				display:block;
+				font-weight:bold;
+				padding:8px 0;
+			}
+			.menu ul li{
+				display:block;
+				clear:both;
+				margin:0;
+				line-height:12px;
+				position:relative;
+				width:100%;
+				background:url(images/dotted-border.png) bottom repeat-x;
+			}
+				.menu ul li:last-child{background:none;}
+			
+		/* ==========================
+			3.1.2 Third Level
+		===========================*/
+		.menu ul ul{
+			position:relative;
+			background:none;
+			top:0;
+			left:0;
+			padding:0;
+			margin-left:10px;
+			margin-top:-3px;
+			width:auto;
+			-webkit-box-shadow:none;
+			-moz-box-shadow:none;
+			box-shadow:none;
+		}
+		.menu ul ul li a{font-weight:normal; font-size:11px; padding:4px 0;}
+/* ==========================
+	3.2 Social Networks
+===========================*/
+#social-networks{
+	float:right;
+	clear:right;
+	margin:18px 10px 0 0;
+	background:-webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(243,243,243)),
+		color-stop(1, rgb(247,247,247))
+	);
+	background:-moz-linear-gradient(
+		center bottom,
+		rgb(243,243,243) 0%,
+		rgb(247,247,247) 100%
+	);
+	-webkit-box-shadow:0 1px 0 #dddddd;
+	-moz-box-shadow:0 1px 0 #dddddd;
+	-o-box-shadow:0 1px 0 #dddddd;
+	box-shadow:0 1px 0 #dddddd;
+	
+	padding:8px 10px 6px;
+}
+	#social-networks a{
+		margin-left:10px; 
+		height:24px; 
+		width:24px;
+		display:inline-block;
+		background-image:url(images/large-icons.png);
+		background-repeat:no-repeat;
+		text-indent:-9999px
+	}
+	#social-networks a:first-child{margin-left:0;}
+	/* ==========================
+		Social Network Icons
+	===========================*/
+	.email{background-position:0 -24px;}
+	.twitter{background-position:0 -48px;}
+	.facebook{background-position:0 -72px;}
+	.youtube{background-position:0 -96px;}
+	.flickr{background-position:0 -120px;}
+	.delicious{background-position:0 -144px;}
+	.vimeo{background-position:0 -168px;}
+/* =======================================================================
+						      4. Layout
+======================================================================= */
+#grid{
+	padding-left:20px;
+}
+#page{
+	width:680px;
+	margin-left:20px;
+	float:left;
+	clear:left;
+}
+#full-page{
+	width:990px;
+	margin-left:20px;
+}
+.wrap{
+	width: 100%;
+}
+/* =======================================================================
+					5. Grid blocks and Masonry plugin styles
+======================================================================= */
+.box, .content{
+	margin:10px 10px 0;
+	padding-bottom:10px;
+	float:left;
+	background:url(images/shadow-left.png) left bottom no-repeat, url(images/shadow-right.png) right bottom no-repeat;
+}
+	.box img, .box object{
+		z-index:0;
+	}
+.box-content, .page-content{
+	-o-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	background:#FFF;
+	padding:10px;
+}
+.col1 .box-content{
+	width:135px;
+}
+	.col1 img{
+		max-width:135px;
+	}
+.col2 .box-content{
+	width:310px;
+}
+	.col2 img{
+		max-width:310px;
+	}
+.col3 .box-content{
+	width:485px;
+}
+	.col3 img{
+		max-width:485px;
+	}
+.col4 .box-content, .content .box-content{
+	width:660px;
+}
+	.col4 img{
+		max-width:660px;
+	}
+.invis{
+	display:none;
+}
+.more-link{display:block; margin-top:5px;}
+img.loop-ad{
+	margin-bottom:3px;
+}
+/* =======================================================================
+							5.1 Box:hover actions
+======================================================================= */
+.img-container{
+	position:relative;
+	background:#fff;
+	margin-bottom:10px;
+	line-height:0;
+}
+.box .img-container{text-align:center;}
+.actions{
+	position:absolute;
+	display:none;
+	top:30%;
+	left:50%;
+	margin-left:-133px;
+	z-index:10;
+	text-align:center;
+	font-size:11px;
+	text-transform:uppercase;
+}
+	.col1 .actions{
+		margin-left:-30px;
+		top:10px;
+		left:50%;
+	}
+	a.view, a.share, a.comment{
+		background-color:rgba(0,0,0,0.75);
+		background-repeat:no-repeat;
+		background-position:50% 12px;
+		display:block;
+		margin-right:10px;
+		width:80px;
+		height:18px;
+		padding-top:62px;
+		text-align:center;
+		display:inline-block;
+		color:#c9c9c9;
+	}
+		.col1 a.view, .col1 a.share, .col1 a.comment, .col1 a.play{
+			background-image:none;
+			height:14px;
+			width:60px;
+			line-height:1;
+			padding:3px;
+			display:block;
+			clear:both;
+			margin-bottom:3px;
+		}
+	a.view{background-image:url(images/enlarge.png);}
+	a.play{background-image:url(images/play.png);}
+	a.share{
+		background-image:url(images/share.png); 
+		cursor:pointer;
+		position:relative;
+	}
+	a.comment{background-image:url(images/comments.png); margin-right:0; position:relative;}
+	a.comment span{
+		position:absolute;
+		left:35px;
+		top:25px;
+		color:#222;
+		font-size:12px;
+		font-weight:bold;
+	}
+	a.closed{opacity:0.6;}
+	.col1 a.comment span{display:none;}
+.share-container{
+	background:url(images/share-triangle.png) top center no-repeat;
+	padding-top:7px;
+	position:absolute;
+	top:-80;
+	left:10%;
+	z-index:999;
+}
+	.col1 .share-container{left:-10px;}
+.share-icons{
+	overflow:hidden;
+	background:#FFF;
+	background:-webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(224,224,224)),
+		color-stop(1, rgb(255,255,255))
+	);
+	background:-moz-linear-gradient(
+		center bottom,
+		rgb(224,224,224) 0%,
+		rgb(255,255,255) 100%
+	);
+	padding:0 5px;
+	text-align:center;
+}
+	#sidebar .share-icons{
+		background:none;
+		padding:0;
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		-o-box-shadow:none;
+		box-shadow:none;
+		text-align:left;
+	}
+.share-icons a{
+	height:16px;
+	width:16px;
+	display:inline-block;
+	text-indent:-9999px;
+	margin:5px;
+	background-image:url(images/small-icons.png);
+	background-repeat:no-repeat;
+}
+a.twitter-share{background-position:0 0;}
+a.email-share{background-position:0 -16px;}
+a.delicious-share{background-position:0 -32px;}
+a.digg-share{background-position:0 -48px;}
+a.tech-share{background-position:0 -64px;}
+a.stumble-share{background-position:0 -80px;}
+a.facebook-share{background-position:0 -96px;}
+
+.post-category{
+	border-top:#ddd 1px dashed;
+	padding-top:5px;
+}
+
+/* =======================================================================
+				5.2 Filter Navigation and Basic Form Styles
+======================================================================= */
+#filtering-nav{margin-left:10px;}
+#filtering-nav ul{
+	padding:0 0 5px;
+	margin:0;
+	overflow:hidden;
+}
+a.filter-btn span{
+	display:block;
+	background:url(images/filter-ic.png) no-repeat;
+	background-position:90% 50%;
+	padding:4px 16px 4px 8px;
+}
+a.filter-btn{
+	background:#FFF;
+	background:-webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(233,233,233)),
+		color-stop(1, rgb(255,255,255))
+	);
+	background:-moz-linear-gradient(
+		center bottom,
+		rgb(233,233,233) 0%,
+		rgb(255,255,255) 100%
+	);
+	text-decoration:none;
+	font-size:11px;
+	text-transform:uppercase;
+	color:#666;
+	font-family:Verdana, Geneva, sans-serif;
+	display:inline-block;
+	margin-bottom:10px;
+}
+	a.filter-btn:hover{
+		-webkit-box-shadow:0 0 13px rgba(0,0,0,0.40);
+		-moz-box-shadow:0 0 13px rgba(0,0,0,0.40);
+		-o-box-shadow:0 0 13px rgba(0,0,0,0.40);
+		box-shadow:0 0 13px rgba(0,0,0,0.40);
+	}
+#filtering-nav li{
+	display:inline;
+	float:left;
+	clear:right;
+	list-style:none;
+	margin-right:5px;
+	margin-left:0;
+}
+#filtering-nav li a, input[type="submit"], input.submit, .navigation a{
+	display:inline-block;
+	padding:5px 10px;
+	text-decoration:none;
+	background:rgb(43,43,43);
+	background:-webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(43,43,43)),
+		color-stop(1, rgb(123,123,123))
+	);
+	background:-moz-linear-gradient(
+		center bottom,
+		rgb(43,43,43) 0%,
+		rgb(123,123,123) 100%
+	);
+	color:#FFF;
+	cursor:pointer;
+}
+	#filtering-nav li a:hover, input[type="submit"]:hover, input.submit:hover, .navigation a:hover{
+		background:rgb(123,123,123);
+		background:-webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(123,123,123)),
+			color-stop(1, rgb(43,43,43))
+		);
+		background:-moz-linear-gradient(
+			center bottom,
+			rgb(123,123,123) 0%,
+			rgb(43,43,43) 100%
+		);
+	}
+	
+/* =======================================================================
+							6. Single Post Page
+======================================================================= */
+.content{
+	clear:both;
+	margin:0;
+	text-align:center;
+}
+.postmetadata{
+	background:#e2e3e4 url(images/engraved-border.png) bottom repeat-x;
+	background:url(images/engraved-border.png) top repeat-x, url(images/engraved-border.png) bottom repeat-x rgba(110,123,131,0.1);
+	font-size:14px;
+	text-align:center;
+	padding:9px 15px;
+	margin-bottom:30px;
+}
+	.wf-active .postmetadata{
+		font-size:18px;
+	}
+.tags, .post-date{
+	display:inline-block;
+	margin-left:10px;
+}
+.entry, .postmetadata, .postmetadata a{
+	color:#4b5054;
+}
+	.postmetadata strong{ text-shadow:none; }
+.entry{
+	padding:0 30px 10px;
+	background:url(images/engraved-border.png) bottom repeat-x;
+	margin-bottom:25px;
+}
+
+/* =======================================================================
+							6.1 Comments
+======================================================================= */
+#comments{
+	margin:0 30px;
+}
+#comments .navigation{
+	margin:20px 0;
+}
+.author-avatar{
+	background:rgba(0,0,0,0.1);
+	text-align:center;
+	width:70px;
+	height:70px;
+	padding:3px;
+	float:right;
+	clear:right;
+	margin:0 0 15px 15px;
+	
+	-webkit-box-shadow:1px 1px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow:1px 1px 0 rgba(0,0,0,0.2);
+	-o-box-shadow:1px 1px 0 rgba(0,0,0,0.2);
+	box-shadow:1px 1px 0 rgba(0,0,0,0.2);
+}
+ol.commentlist{ margin:0 0 30px; }
+ol.commentlist li{
+	list-style:none;
+	background:#f9f9f9;
+	background:rgba(255,255,255,0.5);
+	padding:15px;
+	margin:0 0 15px 0;
+	color:#6d747a;
+}
+	ol.commentlist li h3#reply-title{margin-top:15px;}
+.comment-meta{
+	margin-bottom:20px;
+}
+	.author-name{
+		font-size:14px;
+		display:block;
+		margin-bottom:5px;
+		color:#4b5054
+	}
+	.author-name a{color:#4b5054;}
+	.comment-date, .reply a{color:#93979a; font-size:11px; }
+.reply a{
+	background:url(images/reply-ic.png) left no-repeat;
+	padding:3px 0 3px 20px;
+	display:inline-block;
+}
+ol.commentlist .children{
+	margin-top:30px;
+}
+
+input, textarea{
+	background:#fff;
+	background:rgba(255,255,255,0.75);
+	font-family:Arial, Helvetica, sans-serif;
+	color:#777;
+	padding:5px 10px;
+	margin-top:2px;
+}
+	input:focus{
+		-webkit-box-shadow:0 -2px 3px rgba(0,0,0,0.1);
+		-moz-box-shadow:0 -2px 3px rgba(0,0,0,0.1);
+		-o-box-shadow:0 -2px 3px rgba(0,0,0,0.1);
+		box-shadow:0 -2px 3px rgba(0,0,0,0.1);
+	}
+input[type=text],input[type=password], textarea{
+	display:block; 
+	border:1px solid  #c9c9c9;
+	-webkit-box-shadow:0 2px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow:0 2px 3px rgba(0,0,0,0.1);
+	-o-box-shadow:0 2px 3px rgba(0,0,0,0.1);
+	box-shadow:0 2px 3px rgba(0,0,0,0.1);
+}
+input[type=text],input[type=password]{
+	width:310px;
+	margin-bottom:10px;
+}
+	input[type="password"]{width:200px;}
+	input[type="submit"], input.submit{width:auto; border:0 none;}
+	
+textarea{ width:485px; padding:10px;}
+	ol.commentlist li textarea, ol.commentlist li .form-allowed-tags{
+		width:90%;
+	}
+	.form-allowed-tags{width:505px;}
+label{font-size:14px;}
+.dsq-postid{ display:none; }
+/* =======================================================================
+						      7. Sidebar
+======================================================================= */
+#sidebar{
+	float:left;
+	clear:right;
+	width:310px;
+	margin-left:20px;
+	margin-top:10px;
+}
+	.box-content #sidebar {
+		float:none;
+		margin:0;
+		clear:both;
+	}
+#sidebar li{
+	background:url(images/dotted-border.png) bottom repeat-x;
+	padding:6px;
+	margin:0;
+	list-style:none;
+}
+	#sidebar li:last-child{background:none;}
+#sidebar ul, .textwidget{
+	margin-left:15px;
+}
+	#sidebar ul ul{
+		margin-left:0;
+		padding-left:15px;
+		background:url(images/dotted-border.png) top repeat-x;
+	}
+
+#sidebar .widget ul:last-child{margin-bottom:0;}
+
+.widget{
+	margin-bottom:15px;
+}
+/* ================================================================
+							7.1 Widgets
+================================================================ */
+
+/* =============================
+7.1.1 Related Posts and Cat. Posts
+============================== */
+#sidebar .rel-post-widget ul, #sidebar ul.cat-posts{margin-left:0;}
+#sidebar .rel-post-widget li, #sidebar ul.cat-posts li, .recent-posts li{padding:6px 0;}
+#sidebar .rel-post-widget img, #sidebar ul.cat-posts img, .recent-posts img{margin-bottom:3px;}
+.post-thumb{
+	width:75px;
+	height:75px;
+	padding:2px;
+	float:left;
+	clear:left;
+	background:#FFF;
+}
+.post-info{
+	width:220px;
+	float:right;
+	clear:right;
+}
+	.no-excerpt{padding-top:25px;}
+.post-info p, #archives-page .box .post-info p{font-size:11px;}
+
+.widget ul h3, .widget .cat-post-item h3, .recent-posts h3{font-size:14px; margin:0; padding:0; border:0 none;}
+
+.wf-active .widget ul h3, .wf-active .widget .cat-post-item h3, .wf-active .recent-posts h3{font-size:18px;}
+
+.widget ul h3 a, .widget .cat-post-item h3 a, .recent-posts h3 a{color:#4b5054;}
+
+/* =============================
+		7.1.2 Twitter
+============================== */
+#twitter_update_list li{overflow:hidden;}
+
+/*
+ * jTweetsAnywhere V1.0.1
+ * http://thomasbillenstein.com/jTweetsAnywhere/
+ *
+ * Copyright 2010, Thomas Billenstein
+ * Licensed under the MIT license.
+ * http://thomasbillenstein.com/jTweetsAnywhere/license.txt
+ */
+
+#sidebar li.jta-tweet-list-item
+{
+	overflow: hidden;
+	padding:6px 6px 6px 0;
+}
+.jta-tweet-profile-image
+{
+	width: 48px;
+	display: inline;
+	float: left;
+	padding:3px;
+	background:#FFF;
+}
+
+.jta-tweet-timestamp
+{
+    display: block;
+    font-size: 11px;
+    margin-top: 3px;
+}
+.jta-login-info-profile-image
+{
+	width: 48px;
+	display: inline;
+	float: left;
+}
+
+.jta-login-info-block, .jta-tweet-body-list-profile-image-present
+{
+	margin-left: 62px;
+}
+.jta-error
+{
+    color: #f00;
+}
+
+.jta-clear
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* =============================
+		7.1.3 Ads
+============================== */
+
+.sidebar-ad{margin-right:10px; margin-bottom:7px;}
+.last-ad{margin-right:0;}
+
+/* =============================
+		7.1.4 Flickr
+============================== */
+.flickr_photos{
+	overflow:hidden;
+	margin-bottom:15px;
+}
+.flickr_badge_image{
+	display:inline;
+	float:left;
+	clear:right;
+	margin:0 0 10px 15px;
+	background:#FFF;
+	padding:4px;
+}
+
+.rss-date{
+	color:#747c82;
+	font-size:11px;
+	margin-bottom:1.25em;
+	display:block;
+}
+
+/* =============================
+		7.1.5 Others
+============================== */
+#wp-calendar {
+	width:100%;
+}
+#wp-calendar caption {
+	font-weight: bold;
+	color: #222;
+	text-align: left;
+	font-size:14px;
+	padding-bottom: 4px;
+}
+#wp-calendar thead {
+	font-size:11px;
+}
+#wp-calendar thead th {
+}
+#wp-calendar tbody {
+	color: #aaa;
+}
+#wp-calendar tbody td {
+	padding: 3px 0 2px;
+	background: #f5f5f5;
+	border:1px solid #fff;
+	text-align: center;
+}
+#wp-calendar tbody .pad {
+	background: none;
+}
+#wp-calendar tfoot #next {
+	text-align: right;
+}
+
+/* =======================================================================
+						  	8. Pages
+======================================================================= */
+
+.page-content{margin-bottom:30px;}
+.page-entry{padding:20px;}
+
+/* =======================================================================
+						  	8.1 Archives Page
+======================================================================= */
+.recent-posts{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.recent-posts li{
+	background:url(images/dotted-border.png) bottom repeat-x;
+	padding:8px 0;
+}
+.recent-posts .post-info{width:210px;}
+
+/* =======================================================================
+						  	9. Footer
+======================================================================= */		
+#footer{
+	margin-top:60px;
+	background:#FFF url(images/footer-gradient.png) top repeat-x;
+	background:url(images/footer-gradient.png) top repeat-x, url(images/header-gradient.png) bottom repeat-x #FFF;
+	border-bottom:1px solid #fff;
+	padding:30px;
+	color:#999;
+	clear:both;
+}
+#footer p{
+	margin-bottom:0;
+}
+
+
+/* =======================================================================
+						  		10. WordPress Specific
+======================================================================= */
+.alignleft,
+.post img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 20px;
+	margin-top: 4px;
+}
+.alignright,
+.post img.alignright {
+	display: inline;
+	float: right;
+	clear:right;
+	margin-left: 20px;
+	margin-top: 4px;
+}
+.aligncenter,
+.post img.aligncenter {
+	text-align:center;
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.post img.alignleft, 
+.post img.alignright, 
+.post img.aligncenter {
+	margin-bottom: 20px;
+}
+.post .wp-caption {
+	line-height: 1.5;
+	font-size:11px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 5px;
+	background:#f0f0f0 url(images/white-noise.png) repeat;
+	-webkit-box-shadow:-1px -1px 0 rgba(0,0,0,0.12);
+	-moz-box-shadow:-1px -1px 0 rgba(0,0,0,0.12);
+	-o-box-shadow:-1px -1px 0 rgba(0,0,0,0.12);
+	box-shadow:-1px -1px 0 rgba(0,0,0,0.12);
+}
+.post .wp-caption img {
+	margin: 5px;
+}
+#page .wp-caption p, #full-page {margin-bottom:0;}
+#single .post .wp-caption p.wp-caption-text {
+	margin: 5px;
+	font-size: 11px;
+}
+.post .wp-smiley {
+	margin:0;
+}
+.post .gallery {
+	margin: auto;
+}
+.post .gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 33%;
+}
+.post .gallery img {
+	border: 2px solid #cfcfcf;
+}
+.post .gallery .gallery-caption {
+	color: #888;
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+.post .gallery dl {
+	margin: 0;
+}
+.post .gallery img {
+	border: 2px solid #f1f1f1;
+}
+.post .gallery br+br {
+	display: none;
+}
+.page-link {
+	color: #000;
+	font-weight:bold;
+	margin:0 0 22px 0;
+	word-spacing:0.5em;
+}
+.page-link a:link,
+.page-link a:visited {
+	background: #f1f1f1;
+	color:#333;
+	font-weight:normal;
+	padding:0.5em 0.75em;
+	text-decoration:none;
+}
+.page-link a:active,
+.page-link a:hover {
+	color: #D27E1C;
+}
+#post-image{
+	text-align:center;
+}
+#post-image img{
+	margin-bottom:28px;
+	-moz-border-radius:7px;
+	-o-border-radius:7px;
+	border-radius:7px;
+}
+
+.navigation{margin-left:10px;}
+	.navigation a{padding:5px 10px;}
+	#nav-above{margin-bottom:15px;}
+	#nav-below{	margin-top:20px;}
+	.nav-previous{
+		float:left;
+		clear:right;
+		margin-right:20px;
+	}
+	.nav-next{
+		float:right;
+		clear:right;
+		margin-right:20px;
+	}
+	#comments .nav-next{margin-right:0;}
+#s{ /* This keeps the search inputs in line */
+	float:left;
+	clear:left;
+	width:210px;
+}
+#searchsubmit{float:left; clear:right; margin-left:10px;}
+#searchform{
+	margin-bottom:15px;
+	overflow:hidden;
+}
+
+
+/* =======================================================================
+						  	11. Common Styles
+======================================================================= */
+.box, .menu li a, #header h1 a, a.filter-btn, input{
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease; 
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+#logo, .flickr_badge_image, .jta-tweet-profile-image{
+	-webkit-transition: all 300ms ease; 
+	-moz-transition: all 300ms ease; 
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+a.filter-btn, #filtering-nav li a, #social-networks, a.view, a.share, a.comment, .share-icons, ol.commentlist li, input, textarea, .navigation a{
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+}
+a.filter-btn, #filtering-nav li a, .share-icons, .navigation a{
+	-webkit-box-shadow:0 1px 0 #FFF;
+	-moz-box-shadow:0 1px 0 #FFF;
+	-o-box-shadow:0 1px 0 #FFF;
+	box-shadow:0 1px 0 #FFF;
+}
+
+.flickr_badge_image, .jta-tweet-profile-image, .box-content, .page-content, .post-thumb{
+	-moz-box-shadow:0px 0px 3px rgba(0,0,0,0.15);
+	-webkit-box-shadow:0px 0px 3px rgba(0,0,0,0.15);
+	-o-box-shadow:0px 0px 3px rgba(0,0,0,0.15);
+	box-shadow:0px 0px 3px rgba(0,0,0,0.15);
+}
+
+.box:hover .box-content, .flickr_badge_image:hover, .jta-tweet-profile-image:hover{
+	box-shadow:0px 0px 4px rgba(0,0,0,0.4);
+	-o-box-shadow:0px 0px 4px rgba(0,0,0,0.4);
+	-moz-box-shadow:0px 0px 4px rgba(0,0,0,0.4);
+	-webkit-box-shadow:0px 0px 4px rgba(0,0,0,0.4);
+}
+
+a.filter-btn, h1, #page h2, #page h3, label, a.comment span{
+	text-shadow:0 1px #FFF;
+}

@@ -1,0 +1,99 @@
+body{
+	background-color:#eaf1f7;
+}
+
+/* =======================================================================================
+										HEADER
+======================================================================================= */
+#header{
+	background:url(images/darker-gradient.png) bottom repeat-x #194763;
+}
+	#logo a, a #logo, #logo a:hover{color:#FFF;}
+	#site-description{color:#d7d3d3;}
+	
+	/* Submenu */
+	.menu ul{
+		background-color:#194763; 
+		background-color:rgba(15,56,78,0.85);
+	}
+	
+	/* Menu Links */
+	.menu li a, .menu li.current-menu-item li a, .menu li.current_page_ancestor li a{
+		color:#d7d3d3;
+	}
+	
+	/* Menu Links (hover/current) */
+	.menu li a:hover, .menu li.current-menu-item li a:hover, .menu li.current-menu-item a, .menu li.current_page_ancestor a, .menu li.current_page_ancestor li a:hover,
+	.menu li.current_page_ancestor li.current-menu-item a{
+		color:#ace5f1;
+	}
+	
+	#social-networks{
+		background:rgba(255,255,255, 0.25);
+		-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.4);
+		-moz-box-shadow:0 1px 0 rgba(255,255,255,0.4);
+		-o-box-shadow:0 1px 0 rgba(255,255,255,0.4);
+		box-shadow:0 1px 0 rgba(255,255,255,0.4);
+	}
+	.menu li.parent a{background:url(images/parent-bg-white.png) right no-repeat; padding-right:13px;}
+	.menu li.parent li a{background:none; padding-right:0;}
+	.menu ul li{
+		background:url(images/dotted-border-white.png) bottom repeat-x;
+	}
+
+/* =======================================================================================
+										Buttons
+======================================================================================= */
+#filtering-nav li a, input[type="submit"], input.submit, .navigation a{	
+	background:rgb(25,71,99);
+	background:-webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(11,40,57)),
+		color-stop(1, rgb(25,71,99))
+	);
+	background:-moz-linear-gradient(
+		center bottom,
+		rgb(11,40,57) 0%,
+		rgb(25,71,99) 100%
+	);
+}
+	#filtering-nav li a:hover, input[type="submit"]:hover, input.submit:hover, .navigation a:hover{
+		background:rgb(11,40,57);
+		background:-webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0, rgb(25,71,99)),
+			color-stop(1, rgb(11,40,57))
+		);
+		background:-moz-linear-gradient(
+			center bottom,
+			rgb(25,71,99) 0%,
+			rgb(11,40,57) 100%
+		);
+	}
+	
+/* =======================================================================================
+										Sidebar
+======================================================================================= */
+
+h3.widget-title{
+	background-color:#819cad;
+	background-color:rgba(25,71,99,0.5);
+}
+
+/* =======================================================================================
+										Footer 
+======================================================================================= */
+#footer{
+	background:url(images/dark-south-gradient.png) top repeat-x #194763;
+	border-top:1px solid rgb(255,255,255);
+	border-bottom:none 0;
+	color:#FFF;
+}
+#footer a{
+	color:#FFF;
+	text-decoration:underline;
+}

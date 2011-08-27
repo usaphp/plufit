@@ -1,0 +1,83 @@
+body{
+	background-color:#d5e3c8;
+}
+
+/* =======================================================================================
+										HEADER
+======================================================================================= */
+#header{
+	background:url(images/fancy-bg.jpg) top repeat #2e4250;
+}
+	#logo a, a #logo, #logo a:hover{color:#FFF;}
+	#site-description{color:#d7d3d3;}
+	
+	/* Submenu */
+	.menu ul{
+		background-color:#222; 
+		background-color:rgba(0,0,0,0.75);
+	}
+	
+	/* Menu Links */
+	.menu li a, .menu li.current-menu-item li a, .menu li.current_page_ancestor li a{
+		color:#fff;
+	}
+	
+	/* Menu Links (hover/current) */
+	.menu li a:hover, .menu li.current-menu-item li a:hover, .menu li.current-menu-item a, .menu li.current_page_ancestor a, .menu li.current_page_ancestor li a:hover,
+	.menu li.current_page_ancestor li.current-menu-item a{
+		color:#fff;
+		text-decoration:underline;
+	}
+	
+	#social-networks{
+		background:rgba(255,255,255, 0.2);
+		-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.3);
+		-moz-box-shadow:0 1px 0 rgba(255,255,255,0.3);
+		-o-box-shadow:0 1px 0 rgba(255,255,255,0.3);
+		box-shadow:0 1px 0 rgba(255,255,255,0.3);
+	}
+	.menu li.parent a{background:url(images/parent-bg-white.png) right no-repeat; padding-right:13px;}
+	.menu li.parent li a{background:none; padding-right:0;}
+	.menu ul li{
+		background:url(images/dotted-border-white.png) bottom repeat-x;
+	}
+
+/* =======================================================================================
+										Body
+======================================================================================= */
+a, a.more-link p{
+	color:#4d7e74;
+	text-decoration:underline;
+}
+.postmetadata{
+	background:#bfceb8 url(../images/engraved-border.png) bottom repeat-x;
+	background:url(../images/engraved-border.png) top repeat-x, url(../images/engraved-border.png) bottom repeat-x rgba(185,128,142,0.16);
+}
+ol.commentlist li{
+	background:#e8f0e1;
+	background:rgba(255,255,255,0.5);
+}
+	
+/* =======================================================================================
+										Sidebar
+======================================================================================= */
+
+h3.widget-title{
+	background-color:#4e6365;
+	background-color:rgba(21,45,59,0.7);
+}
+
+/* =======================================================================================
+										Footer 
+======================================================================================= */
+#footer{
+	background:url(images/fancy-bg.jpg) top repeat #2e4250;
+	border-top:1px solid rgb(255,255,255);
+	border-bottom:none 0;
+	color:#FFF;
+	text-shadow:0 1px rgba(0,0,0,0.75);
+}
+#footer a{
+	color:#FFF;
+	text-decoration:underline;
+}

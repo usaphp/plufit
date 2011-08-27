@@ -1,0 +1,18 @@
+.share-container{
+	position:relative;
+	text-align:center;
+	left:0;
+}
+.share-icons{
+	text-align:center;
+}
+.col1 .share-container{left:0;}
+a.view, a.share, a.comment, a.play{background-position:center top;}
+a.view{background-image:url(../images/enlarge-ie.png);}
+a.play{background-image:url(../images/play-ie.png);}
+a.share{background-image:url(../images/share-ie.png);}
+a.comment{background-image:url(../images/comments-ie.png);}
+
+.col1 a.view, .col1 a.share, .col1 a.comment, .col1 a.play{background:url(../images/black75.png);}
+
+a img{border:0 none;}
