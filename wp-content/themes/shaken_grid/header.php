@@ -44,24 +44,6 @@
 <?php // Plugins and Scripts  ?>
 <?php wp_head(); ?>
 
-<?php // @font-face (Google Web Fonts) 
-if(!get_option('shaken_disable_fontface')): ?>
-	<script type="text/javascript">
-    WebFontConfig = {
-    google: { families: [ 'Yanone Kaffeesatz:300', 'Yanone Kaffeesatz:400' ] }
-    };
-    (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-    })();
-    </script>
-<?php endif; ?>
-
 <?php // Insert Analytics Code set in Theme Options 
 if(get_option('shaken_analytics_code')){ echo get_option('shaken_analytics_code'); } ?>
 
@@ -72,8 +54,21 @@ if(get_option('shaken_analytics_code')){ echo get_option('shaken_analytics_code'
 <!-- =================================
 	Header and Nav
 ================================= -->
-<div id="header">
 
+<div class="home_top_ad">
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-2966198355915984";
+/* plufit header */
+google_ad_slot = "2933126360";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<div id="header">
 	<div id="site-info">
     
     	<?php if(get_option('shaken_logo')) { ?>
@@ -89,10 +84,9 @@ if(get_option('shaken_analytics_code')){ echo get_option('shaken_analytics_code'
       	<?php } ?>
         
     </div><!-- #site-info -->
-    
-    <?php wp_nav_menu( array( 'container_class' => 'header-nav', 'theme_location' => 'header' ) ); ?>
-    
+
     <div id="social-networks">
+	    <a href="http://vkontakte.ru/plufit" title="В Контакте" class="vkontakte">В Контакте</a>
 		<?php if(get_option('shaken_twitter')){ ?>
             <a href="http://twitter.com/<?php echo get_option('shaken_twitter'); ?>" title="Tweets" class="twitter">Twitter</a>
         
@@ -121,9 +115,15 @@ if(get_option('shaken_analytics_code')){ echo get_option('shaken_analytics_code'
             <a href="mailto:<?php echo get_option('shaken_email'); ?>" title="Email" class="email">Email</a>
         
 		<?php } ?>
-            <a href="<?php if(get_option('shaken_rss')){ echo get_option('shaken_rss'); } else { bloginfo('rss2_url'); }?>" title="Subscribe" class="rss">RSS</a>
+            <a href="<?php if(get_option('shaken_rss')){ echo get_option('shaken_rss'); } else { bloginfo('rss2_url'); }?>" title="Подписаться" class="rss">RSS</a>
             
     </div><!-- #social-networks -->
     
     <div class="clearfix"></div>
+
+    <?php wp_nav_menu( array( 'container_class' => 'header-nav', 'theme_location' => 'header' ) ); ?>
+	<div class="header_search">
+    <?php get_search_form(); ?>
+	</div>
+<div class="clearfix"></div>
 </div>

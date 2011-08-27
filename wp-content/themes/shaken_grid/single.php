@@ -31,25 +31,31 @@
         
         <div class="postmetadata">
         
-            <strong>Category</strong>: <?php the_category(', '); ?>
+            <strong>Категории</strong>: <?php the_category(', '); ?>
             
             <?php if(has_tag()){ ?>
-                <div class="tags"><strong>Tags</strong>: <?php the_tags( '', ', ', ''); ?> </div>
+                <div class="tags"><strong>Метки</strong>: <?php the_tags( '', ', ', ''); ?> </div>
             <?php } ?>
                 
-            <div class="post-date"><strong>Posted on</strong>: <?php the_time('F jS, Y') ?>
-			<?php if(!get_option('shaken_hide_author')){ ?> by 
-            <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" title="View all posts by <?php echo get_the_author(); ?>" id="author-link">
-				<?php echo get_the_author(); ?>
-           </a><?php } ?></div>
+            <div class="post-date"><strong>Добавлен</strong>: <?php the_time('F jS, Y') ?></div>
         </div>
-        
+        <div class="ad_block_article"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2966198355915984";
+/* plufit article inside */
+google_ad_slot = "0680599322";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
         <div class="entry">
 			<?php the_content(); ?>
             
-            <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+            <?php wp_link_pages(array('before' => '<p><strong>Страницы:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
             
-            <?php edit_post_link('<p>Edit This Post</p>'); ?>
+            <?php edit_post_link('<p>Редактировать статью</p>'); ?>
         </div>
         
         <?php comments_template( '', true ); ?>

@@ -92,7 +92,7 @@ a, a.more-link p{
 	a:hover{text-decoration:underline;}
 #logo a, a #logo{
 	font-weight:normal;
-	font-size:42px;
+	font-size:32px;
 	color:#333;
 	margin:0 80px 0 0;
 	text-decoration:none;
@@ -139,7 +139,7 @@ h1{	font-size:40px; color:#4b5054; margin-bottom:30px;}
 		.box h2 a{ color:#333; text-decoration:none }
 		.box h2 a:hover{text-decoration:underline;}
 h1#logo, #logo{
-	margin-bottom:10px;
+	margin-bottom:0px;
 }
 h3{
 	font-size:20px;
@@ -156,8 +156,9 @@ h3{
 			background:#6e7b82;
 			background:rgba(57, 75, 86, 0.7);
 			border:none 0;
-			font-size:22px;
-			padding:3px 15px;
+			font-weight: bold;
+			font-size:16px;
+			padding:5px 15px;
 			color:#FFF;
 			text-shadow:0 -1px rgba(0,0,0,0.45);
 			margin-bottom:15px;
@@ -263,13 +264,13 @@ cite{
 
 /* ----------- Regular ----------- */
 #logo a, .postmetadata strong, h2, h3, h4, h5{
-	font-family:'Yanone Kaffeesatz', Arial, Helvetica, sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
 	font-weight:400;
 }
 
 /* ----------- Light ----------- */
 .menu li a, #site-description, h1, .postmetadata{
-	font-family:'Yanone Kaffeesatz', Arial, Helvetica, sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
 	font-weight:300;
 }
 	.wf-active #site-description, .wf-active .box h2{ font-size:16px; }
@@ -290,7 +291,7 @@ code {
 #header{
 	margin-bottom:30px;
 	background:#FFF url(images/header-gradient.png) bottom repeat-x;
-	padding:30px 20px 40px 30px;
+	padding:10px 20px 10px 30px;
 	border-bottom:1px solid #FFF;
 }
 
@@ -310,8 +311,10 @@ code {
 		.menu li{
 			display:inline;
 			float:left;
-			font-size:18px;
-			margin-left:40px;
+			font-size:14px;
+			margin-left:15px;
+			border-right: 1px solid #ddd;
+			padding-right: 15px;
 			position:relative;
 		}
 			.wf-active .menu li{
@@ -439,6 +442,7 @@ code {
 	.flickr{background-position:0 -120px;}
 	.delicious{background-position:0 -144px;}
 	.vimeo{background-position:0 -168px;}
+	.vkontakte{background:url('images/vkontakte.png') center center no-repeat!important;}
 /* =======================================================================
 						      4. Layout
 ======================================================================= */
@@ -644,9 +648,7 @@ a.facebook-share{background-position:0 -96px;}
 }
 a.filter-btn span{
 	display:block;
-	background:url(images/filter-ic.png) no-repeat;
-	background-position:90% 50%;
-	padding:4px 16px 4px 8px;
+	padding:4px 8px 4px 8px;
 }
 a.filter-btn{
 	background:#FFF;
@@ -689,35 +691,11 @@ a.filter-btn{
 	padding:5px 10px;
 	text-decoration:none;
 	background:rgb(43,43,43);
-	background:-webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0, rgb(43,43,43)),
-		color-stop(1, rgb(123,123,123))
-	);
-	background:-moz-linear-gradient(
-		center bottom,
-		rgb(43,43,43) 0%,
-		rgb(123,123,123) 100%
-	);
 	color:#FFF;
 	cursor:pointer;
 }
 	#filtering-nav li a:hover, input[type="submit"]:hover, input.submit:hover, .navigation a:hover{
 		background:rgb(123,123,123);
-		background:-webkit-gradient(
-			linear,
-			left bottom,
-			left top,
-			color-stop(0, rgb(123,123,123)),
-			color-stop(1, rgb(43,43,43))
-		);
-		background:-moz-linear-gradient(
-			center bottom,
-			rgb(123,123,123) 0%,
-			rgb(43,43,43) 100%
-		);
 	}
 	
 /* =======================================================================
@@ -1064,7 +1042,7 @@ label{font-size:14px;}
 	background:#FFF url(images/footer-gradient.png) top repeat-x;
 	background:url(images/footer-gradient.png) top repeat-x, url(images/header-gradient.png) bottom repeat-x #FFF;
 	border-bottom:1px solid #fff;
-	padding:30px;
+	padding:10px 30px;
 	color:#999;
 	clear:both;
 }
@@ -1224,9 +1202,9 @@ label{font-size:14px;}
 	transition: all 300ms ease;
 }
 a.filter-btn, #filtering-nav li a, #social-networks, a.view, a.share, a.comment, .share-icons, ol.commentlist li, input, textarea, .navigation a{
-	-moz-border-radius:8px;
-	-o-border-radius:8px;
-	border-radius:8px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
 }
 a.filter-btn, #filtering-nav li a, .share-icons, .navigation a{
 	-webkit-box-shadow:0 1px 0 #FFF;
@@ -1252,3 +1230,11 @@ a.filter-btn, #filtering-nav li a, .share-icons, .navigation a{
 a.filter-btn, h1, #page h2, #page h3, label, a.comment span{
 	text-shadow:0 1px #FFF;
 }
+
+
+.ad_block_article { text-align: center; margin-bottom: 15px; }
+.ad_block_sidebar { text-align: center; margin-bottom: 15px; }
+
+.home_top_ad { padding: 10px 0px; text-align: center; background: #eeeeee; border-bottom: 1px solid #ccc; }
+.header-nav { float:left; }
+.header_search { float:right; margin-top:20px;  }

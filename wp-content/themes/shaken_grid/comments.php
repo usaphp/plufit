@@ -27,7 +27,7 @@
 ?>
 
 <?php if ( have_comments() ) : ?>
-			<h2 id="comments-title">What Others Are Saying</h2>
+			<h2 id="comments-title">Комментарии</h2>
 
 <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 			<div class="navigation">

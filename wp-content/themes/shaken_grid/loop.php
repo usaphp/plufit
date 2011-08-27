@@ -1,35 +1,10 @@
 <?php /* Display filter options if on homepage and if they aren't disabled in the theme options  */ ?>
-<?php if(is_home() && !get_option('shaken_hide_filters')) { ?>
-<div id="filtering-nav">
-        <a href="#" class="filter-btn"><span>Filter</span></a>
-        <ul>
-            <li><a href="#all" class="all">All</a></li>
-        <?php
-        $args=array(
-          'orderby' => 'name'
-          );
-        $categories=get_categories($args);
-          foreach($categories as $category) {  ?>
-            <li><a href="#<?php echo $category->category_nicename; ?>" class="<?php echo $category->category_nicename; ?>"><?php echo $category->name; ?></a></li>
-         <?php } ?>
-         </ul>
-         <div class="clearfix"></div>
-</div>
-<?php } ?>
 
 <?php /* If this is the homepage and the "show all posts on blog" option is checked, then display all posts on one page without pagination  */ 
 if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('posts_per_page=-1'); } ?>
 
 <?php if (have_posts()) : ?>
 
-<?php /* Display navigation to next/previous pages when applicable  */ ?>
-<?php if (  $wp_query->max_num_pages > 1 ) : ?>
-	<div id="nav-above" class="navigation">
-        <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older') ); ?></div>
-        <div class="nav-next"><?php previous_posts_link( __( 'Newer <span class="meta-nav">&rarr;</span>') ); ?></div>
-        <div class="clearfix"></div>
-    </div><!-- #nav-below -->
-<?php endif; ?>
 
 	<!-- ====================================================================
     							Post Items
@@ -43,7 +18,7 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
             </div>
             </div>
         <?php } ?>
-        
+
         <?php /* Display ads set in theme options  */ ?>
         <?php if(is_home() && get_option('shaken_ads_home')) {} else { ?>
 			<?php if(get_option('shaken_ad_one_img') || get_option('shaken_ads_custom')){ ?>
@@ -78,9 +53,26 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
                 </div><!-- #box -->
                 
         <?php } } ?>
-        
+
+		<?php $post_count = 0; ?>
 		<?php while (have_posts()) : the_post(); 
-		
+			$post_count++;
+			if($post_count == 7){ ?>
+				<div class="all box col2">
+                <div class="box-content">
+					<script type="text/javascript"><!--
+					google_ad_client = "ca-pub-2966198355915984";
+					/* plufit block pos 6 */
+					google_ad_slot = "6111588305";
+					google_ad_width = 300;
+					google_ad_height = 250;
+					//-->
+					</script>
+					<script type="text/javascript"
+					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+					</script>
+				</div></div>
+			<?php } 
 			// Is there a video?
 			$vid = get_post_meta($post->ID, 'soy_vid', true);
 			$hide_vid = get_post_meta($post->ID, 'soy_hide_vid', true);
@@ -144,11 +136,11 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
 						   //	Otherwise display the "Enlarge" icon
 						   else { ?>
                            
-                        	 <a href="<?php echo wp_get_attachment_url($thumbID); ?>" rel="gallery" title="<?php the_title(); ?>" class="view">Enlarge</a>
+                        	 <a href="<?php echo wp_get_attachment_url($thumbID); ?>" rel="gallery" title="<?php the_title(); ?>" class="view">Увеличить</a>
                              
                            <?php } ?>
                              
-                             <a class="share">Share</a>   
+                             <a class="share">Нравится</a>
                              
                              <?php 
 							 // Check if comments are closed
@@ -157,7 +149,7 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
 							 <?php } 
 							 // Otherwise display comment count
 							 else { ?>
-                             	<a href="<?php comments_link(); ?>" class="comment"><span><?php comments_number('0', '1', '%'); ?></span> Comment</a> 
+                             	<a href="<?php comments_link(); ?>" class="comment"><span><?php comments_number('0', '1', '%'); ?></span> Обсудить</a>
                              <?php } ?>
                              
                               <?php // ================================================
@@ -220,14 +212,14 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
                                 the_excerpt(); 
                             }
                             else{
-                                the_content('Continue Reading &rarr;');
+                                the_content('Читать далее &rarr;');
                             }
                         }
                 endif; ?>
 				
-                <?php if(!is_category()&& !get_option('shaken_hide_category_link')){ ?><div class="post-category">Category: <?php the_category(', '); ?></div><?php } ?>
+                <?php if(!is_category()&& !get_option('shaken_hide_category_link')){ ?><div class="post-category">Категории: <?php the_category(', '); ?></div><?php } ?>
                 
-                <?php edit_post_link('Edit this post'); ?>
+                <?php edit_post_link('Редактировать Статью'); ?>
                 
          	</div><!-- #box-content -->
         </div><!-- #box -->
@@ -237,8 +229,8 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
 <?php /* Display navigation to next/previous pages when applicable  */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
 	<div id="nav-below" class="navigation">
-        <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older') ); ?></div>
-        <div class="nav-next"><?php previous_posts_link( __( 'Newer <span class="meta-nav">&rarr;</span>') ); ?></div>
+        <div class="nav-previous"><?php next_posts_link( __( 'Предыдущая Страница') ); ?></div>
+        <div class="nav-next"><?php previous_posts_link( __( 'Следующая Страница') ); ?></div>
         <div class="clearfix"></div>
     </div><!-- #nav-below -->
 <?php endif; ?>
@@ -247,7 +239,7 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
 <?php /* If there are no posts */ ?>
 <div id="sort">
     <div class="box">
-        <h2>Sorry, no posts were found</h2>
+        <h2>Извините, на Ваш запрос не найдено ни одной статьи</h2>
         <?php get_search_form(); ?>
     </div>
 </div><!-- #sort -->

@@ -18,7 +18,7 @@
                 
                 <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
-                <?php edit_post_link('Edit this post'); ?>
+                <?php edit_post_link('Редактировать'); ?>
             </div><!-- #page-entry -->
                 
             <?php endwhile; endif; ?>

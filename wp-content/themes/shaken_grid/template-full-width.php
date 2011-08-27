@@ -20,7 +20,7 @@ get_header(); ?>
                 
 				<?php the_content(); ?>
                 
-                <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+                <?php wp_link_pages(array('before' => '<p><strong>Страницы:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
                 <?php edit_post_link('Edit this post'); ?>
             </div><!-- #page-entry -->

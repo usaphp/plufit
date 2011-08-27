@@ -14,6 +14,6 @@
     <form id="searchform" name="searchform" method="get" action="<?php echo home_url(); ?>">
 		<div>
 			<input type="text" id="s" name="s" />
-			<input type="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search'); ?>" />
+			<input type="submit" id="searchsubmit" value="<?php esc_attr_e( 'Поиск'); ?>" />
 		</div>
     </form>

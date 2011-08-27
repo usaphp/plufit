@@ -29,10 +29,10 @@ get_header(); ?>
         </div>
         
         <?php comments_template( '', true ); ?>
-        
+
 	</div><!-- #page -->
     
     <?php get_sidebar(); ?>
-    
+
 </div><!-- #wrap -->
 <?php get_footer(); ?>

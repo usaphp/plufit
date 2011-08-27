@@ -16,8 +16,8 @@
     	
         <div class="box">
         	<div class="box-content">
-            	<h2>Sorry, nothing was found for your search</h2>
-                <p>Maybe try searching for something different.</p>
+            	<h2>По вашему запросу ничего не найдено</h2>
+                <p>Попробуйте поменять текст запроса</p>
                 <?php get_search_form(); ?>
             </div>
         </div>
