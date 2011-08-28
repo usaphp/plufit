@@ -27,6 +27,11 @@ wp-content/*
 # specify (see the commented-out examples for hints on how to do this.)
 wp-content/plugins/*
 !wp-content/plugins/google-sitemap-generator/
+!wp-content/plugins/wordtwit/
+!wp-content/plugins/wptouch/
+!wp-content/plugins/wp-pagenavi/
+!wp-content/plugins/headspace2/
+!wp-content/plugins/wp-dbmanager/
 # !wp-content/plugins/my-directory-plugin/
 
 # Ignore everything in the "themes" directory, except the themes you
