@@ -35,16 +35,21 @@ function widget($args, $instance) {
         
         <?php echo $before_widget . $before_title . $title . $after_title; ?>
 		<div class="side_share">
-		<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="plufit" data-lang="ru">Твитнуть</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
 		<!-- Put this script tag to the <head> of your page -->
 		<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"></script>
 
 		<script type="text/javascript">
 		  VK.init({apiId: 2455824, onlyWidgets: true});
 		</script>
-
+		<div class="share_item">
+			<div id="vk_like"></div>
+		</div>
+		<div class="share_item">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="plufit" data-lang="ru">Твитнуть</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</div>
+		<div class="clearfix"></div>
 		<!-- Put this div tag to the place, where the Like block will be -->
-		<div id="vk_like"></div>
 		<script type="text/javascript">
 		VK.Widgets.Like("vk_like", {type: "button"});
 		</script>
