@@ -1241,3 +1241,6 @@ a.filter-btn, h1, #page h2, #page h3, label, a.comment span{
 .header_search { float:right; margin-top:20px;  }
 
 #head-social-butons { float:left; padding-top:20px; }
+.article_share_ins { margin-bottom: 10px; }
+.share-icons.article_share_ins { background: none; }
+.side_share { margin-bottom: 15px; }

@@ -155,28 +155,28 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
                              	<div class="share-icons">
                                 	<?php if(get_option('shaken_tweet_btn_user') && get_option('shaken_tweet_btn_desc')){
 										$twitRec = get_option('shaken_tweet_btn_user').':'.get_option('shaken_tweet_btn_desc');
-									} 
+									}
 									else {
-                                		$twitRec = 'sawyerh:Best Designer Alive'; 
+                                		$twitRec = 'sawyerh:Best Designer Alive';
 									} ?>
                                 	<a href="javascript: void(0)" class="twitter-share iframe" onClick="twitPop('<?php the_permalink(); ?>', '<?php the_title(); ?> - ', '<?php echo $twitRec; ?>')">
                                     Twitter</a>
-                                    
+
                                     <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" class="facebook-share" target="_blank">
                                     Facebook</a>
-                                    
+
                                     <a href="http://www.stumbleupon.com/submit?url=<?php the_permalink(); ?>&amp;title=<?php the_title(); ?>" class="stumble-share" target="_blank">
                                     StumbleUpon</a>
-                                    
+
                                     <a href="http://technorati.com/cosmos/search.html?url=<?php the_permalink(); ?>" class="tech-share" target="_blank">
                                     Technorati</a>
-                                    
+
                                     <a href="http://digg.com/submit?phase=2&amp;url=<?php the_permalink(); ?>&amp;title=<?php the_title(); ?>" class="digg-share" target="_blank">
                                     Digg</a>
-                                    
+
                                     <a href="http://del.icio.us/post?url=<?php the_permalink(); ?>&amp;title=<?php the_title(); ?>" class="delicious-share" target="_blank">
                                     Delicious</a>
-                                    
+
                                     <a href="mailto:EMAIL?body=<?php the_permalink(); ?>" class="email-share" target="_blank">
                                     Email</a>
                                 </div>

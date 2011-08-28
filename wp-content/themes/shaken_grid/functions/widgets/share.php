@@ -34,21 +34,27 @@ function widget($args, $instance) {
         
         
         <?php echo $before_widget . $before_title . $title . $after_title; ?>
-        	<div class="share-icons">
-		        <?php if(get_option('shaken_tweet_btn_user') && get_option('shaken_tweet_btn_desc')){
-					$twitRec = get_option('shaken_tweet_btn_user').':'.get_option('shaken_tweet_btn_desc');
-				} 
-				else {
-					$twitRec = 'sawyerh:Best Designer Alive'; 
-				} ?>
-				<a href="javascript: void(0)" class="twitter-share iframe" onClick="twitPop('<?php the_permalink(); ?>', '<?php the_title(); ?> - ', '<?php echo $twitRec; ?>')">Twitter</a>
-                <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" class="facebook-share" target="_blank">Facebook</a>
-                <a href="http://www.stumbleupon.com/submit?url=<?php the_permalink(); ?>&amp;title=<?php the_title(); ?>" class="stumble-share" target="_blank">StumbleUpon</a>
-                <a href="http://technorati.com/cosmos/search.html?url=<?php the_permalink(); ?>" class="tech-share" target="_blank">Technorati</a>
-                <a href="http://digg.com/submit?phase=2&amp;url=<?php the_permalink(); ?>&amp;title=<?php the_title(); ?>" class="digg-share" target="_blank">Digg</a>
-                <a href="http://del.icio.us/post?url=<?php the_permalink(); ?>&amp;title=<?php the_title(); ?>" class="delicious-share" target="_blank">Delicious</a>
-                <a href="mailto:EMAIL?body=<?php the_permalink(); ?>" class="email-share" target="_blank">Email</a>
-          	</div>
+		<div class="side_share">
+		<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="plufit" data-lang="ru">Твитнуть</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<!-- Put this script tag to the <head> of your page -->
+		<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"></script>
+
+		<script type="text/javascript">
+		  VK.init({apiId: 2455824, onlyWidgets: true});
+		</script>
+
+		<!-- Put this div tag to the place, where the Like block will be -->
+		<div id="vk_like"></div>
+		<script type="text/javascript">
+		VK.Widgets.Like("vk_like", {type: "button"});
+		</script>
+		</div>
+
+		<!-- VK Widget -->
+		<div id="vk_groups"></div>
+		<script type="text/javascript">
+		VK.Widgets.Group("vk_groups", {mode: 0, width: "310", height: "290"}, 29678436);
+		</script>
         <?php echo $after_widget; ?>
     <?php
 	} // #widget
