@@ -726,6 +726,7 @@ a.filter-btn{
 }
 	.postmetadata strong{ text-shadow:none; }
 .entry{
+	font-size:14px;
 	padding:0 30px 10px;
 	background:url(images/engraved-border.png) bottom repeat-x;
 	margin-bottom:25px;
@@ -1232,9 +1233,11 @@ a.filter-btn, h1, #page h2, #page h3, label, a.comment span{
 }
 
 
-.ad_block_article { text-align: center; margin-bottom: 15px; }
+.ad_block_article { text-align: left; margin-bottom: 20px; padding-left:30px; }
 .ad_block_sidebar { text-align: center; margin-bottom: 15px; }
 
 .home_top_ad { padding: 10px 0px; text-align: center; background: #eeeeee; border-bottom: 1px solid #ccc; }
 .header-nav { float:left; }
 .header_search { float:right; margin-top:20px;  }
+
+#head-social-butons { float:left; padding-top:20px; }

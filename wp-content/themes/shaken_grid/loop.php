@@ -97,11 +97,7 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
 			$show_desc = get_post_meta($post->ID, 'soy_show_desc', true);
 		?>
         
-        <div class="all box <?php
-			foreach((get_the_category()) as $category) {
-			echo $category->category_nicename . ' ';
-			}
-		?><?php echo $my_size; ?>">
+        <div class="all box <?php echo $my_size; ?>">
 			
             <div class="box-content">
             
@@ -228,9 +224,7 @@ if(is_home() && get_option('shaken_show_all') && !is_search()) { query_posts('po
 
 <?php /* Display navigation to next/previous pages when applicable  */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-	<div id="nav-below" class="navigation">
-        <div class="nav-previous"><?php next_posts_link( __( 'Предыдущая Страница') ); ?></div>
-        <div class="nav-next"><?php previous_posts_link( __( 'Следующая Страница') ); ?></div>
+	<div id="nav-below" class="navigation"><?php wp_pagenavi(); ?>
         <div class="clearfix"></div>
     </div><!-- #nav-below -->
 <?php endif; ?>

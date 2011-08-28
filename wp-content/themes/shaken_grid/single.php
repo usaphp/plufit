@@ -39,25 +39,14 @@
                 
             <div class="post-date"><strong>Добавлен</strong>: <?php the_time('F jS, Y') ?></div>
         </div>
-        <div class="ad_block_article"><script type="text/javascript"><!--
-google_ad_client = "ca-pub-2966198355915984";
-/* plufit article inside */
-google_ad_slot = "0680599322";
-google_ad_width = 468;
-google_ad_height = 60;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></div>
         <div class="entry">
 			<?php the_content(); ?>
-            
+
             <?php wp_link_pages(array('before' => '<p><strong>Страницы:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
             
             <?php edit_post_link('<p>Редактировать статью</p>'); ?>
         </div>
-        
+
         <?php comments_template( '', true ); ?>
 
 	</div><!-- #page -->

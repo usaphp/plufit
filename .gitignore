@@ -32,6 +32,8 @@ wp-content/plugins/*
 !wp-content/plugins/wp-pagenavi/
 !wp-content/plugins/headspace2/
 !wp-content/plugins/wp-dbmanager/
+!wp-content/plugins/share-buttons/
+
 # !wp-content/plugins/my-directory-plugin/
 
 # Ignore everything in the "themes" directory, except the themes you

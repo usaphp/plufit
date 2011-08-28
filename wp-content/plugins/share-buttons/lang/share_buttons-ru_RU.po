@@ -1,0 +1,409 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Share Buttons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-20 19:40+0600\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Loskutnikov Artem <artlosk@gmail.com>\n"
+"Language-Team: artlosk Project <artlosk@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: KYRGYZSTAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: D:\\share-buttons\n"
+"X-Poedit-SearchPath-0: D:\\share-buttons\n"
+
+#: D:\share-buttons/share-buttons-options.php:170
+msgid "Share Buttons Settings"
+msgstr "Настройки Share Buttons"
+
+#: D:\share-buttons/share-buttons-options.php:174
+msgid "Upload picture for your site-logo"
+msgstr "Загрузите ваш логотип сайта"
+
+#: D:\share-buttons/share-buttons-options.php:188
+msgid "Files must be <b>.jpg, .gif, .png</b> extension, the desired size of <b>100x100 pixels</b>."
+msgstr "Файлы должны быть с расширением <b>.jpg, .gif, .png</b>, желательный размер <b>100x100 пикселей</b>."
+
+#: D:\share-buttons/share-buttons-options.php:199
+msgid "You may using <b>logo.png</b> only, no parsing images, go to the \"<b>Other Settings</b>\" and click checkbox"
+msgstr ""
+
+#: D:\share-buttons/share-buttons-options.php:204
+msgid "Sort buttons"
+msgstr "Сортировка кнопок"
+
+#: D:\share-buttons/share-buttons-options.php:242
+msgid "Please drag and drop buttons for sorting"
+msgstr "Чтобы отсортировать кнопки, хажмите левой кнопкой мыши картинку и перетащите в нужное место"
+
+#: D:\share-buttons/share-buttons-options.php:262
+msgid "Sorry!  There are no items in the system."
+msgstr "Извините! Нет данных."
+
+#: D:\share-buttons/share-buttons-options.php:288
+msgid "Choose the display style for your social buttons"
+msgstr "Выберете стиль, который будет отображаться"
+
+#: D:\share-buttons/share-buttons-options.php:302
+msgid "Enable/Disable Share buttons"
+msgstr "Включение/Отключение социальных кнопок"
+
+#: D:\share-buttons/share-buttons-options.php:306
+msgid "Vkontakte"
+msgstr "Vkontakte"
+
+#: D:\share-buttons/share-buttons-options.php:310
+msgid "Mail.ru"
+msgstr "Mail.ru"
+
+#: D:\share-buttons/share-buttons-options.php:314
+msgid "Facebook"
+msgstr "Facebook"
+
+#: D:\share-buttons/share-buttons-options.php:318
+msgid "Odnoklassniki"
+msgstr "Odnoklassniki"
+
+#: D:\share-buttons/share-buttons-options.php:322
+msgid "Twitter"
+msgstr "Twitter"
+
+#: D:\share-buttons/share-buttons-options.php:326
+msgid "LiveJournal"
+msgstr "LiveJournal"
+
+#: D:\share-buttons/share-buttons-options.php:330
+msgid "Google-Buzz"
+msgstr "Google-Buzz"
+
+#: D:\share-buttons/share-buttons-options.php:333
+msgid "But will have to sort <b>ALL</b> the buttons"
+msgstr "Но сортировать придётся всё равно <b>ВСЕ</b> кнопки"
+
+#: D:\share-buttons/share-buttons-options.php:339
+#: D:\share-buttons/share-buttons-options.php:580
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: D:\share-buttons/share-buttons-options.php:343
+msgid "Header text before social buttons"
+msgstr "Текст перед социальными кнопками"
+
+#: D:\share-buttons/share-buttons-options.php:345
+msgid "Your text"
+msgstr "Ваш текст"
+
+#: D:\share-buttons/share-buttons-options.php:351
+msgid "Position Share Buttons"
+msgstr "Позиция кнопок соц. сетей"
+
+#: D:\share-buttons/share-buttons-options.php:354
+msgid "Button horizontal position"
+msgstr "Горизонтальная позиция кнопок"
+
+#: D:\share-buttons/share-buttons-options.php:357
+msgid "Right"
+msgstr "Справа"
+
+#: D:\share-buttons/share-buttons-options.php:358
+msgid "Left"
+msgstr "Слева"
+
+#: D:\share-buttons/share-buttons-options.php:360
+msgid "Select which side you want to display the button: right or left"
+msgstr "Выберете где отображаться кнопкам: слева или справа"
+
+#: D:\share-buttons/share-buttons-options.php:364
+msgid "Button vertical position"
+msgstr "Вертикальная позиция кнопок"
+
+#: D:\share-buttons/share-buttons-options.php:367
+msgid "On top of post"
+msgstr "Вверху записи"
+
+#: D:\share-buttons/share-buttons-options.php:368
+msgid "On bottom of post"
+msgstr "Внизу записи"
+
+#: D:\share-buttons/share-buttons-options.php:370
+msgid "Sets up before or after post/page button are shown"
+msgstr "Установите где отображаться кнопкам перед записью или после записи"
+
+#: D:\share-buttons/share-buttons-options.php:374
+msgid "The Button displays on"
+msgstr "Где показывать кнопки"
+
+#: D:\share-buttons/share-buttons-options.php:378
+msgid "Posts"
+msgstr "В постах"
+
+#: D:\share-buttons/share-buttons-options.php:383
+msgid "Pages"
+msgstr "На страницах"
+
+#: D:\share-buttons/share-buttons-options.php:388
+msgid "Home"
+msgstr "На главную"
+
+#: D:\share-buttons/share-buttons-options.php:394
+msgid "Exclude pages and posts with IDs"
+msgstr "Исключить страницы и посты по ID"
+
+#: D:\share-buttons/share-buttons-options.php:397
+msgid "Specify IDs of pages and posts which should stay without buttons (separated by commas, eg <code>4, 8, 15, 16, 23, 42</code>)"
+msgstr "Вы можете исключить записи и страницы, используя их ID, впишите ID разделяя запятыми (<code>4, 8, 15, 16, 23, 42</code>)"
+
+#: D:\share-buttons/share-buttons-options.php:404
+msgid "Other Settings"
+msgstr "Другие настройки"
+
+#: D:\share-buttons/share-buttons-options.php:406
+msgid "Twitter via"
+msgstr "Twitter via"
+
+#: D:\share-buttons/share-buttons-options.php:406
+msgid "Your Nickname without \"@\""
+msgstr "Ваш никнейм без \"@\""
+
+#: D:\share-buttons/share-buttons-options.php:411
+msgid "Use only <b>logo.png</b>, no parsing images"
+msgstr ""
+
+#: D:\share-buttons/share-buttons-options.php:417
+msgid "Like Buttons"
+msgstr "Кнопки Нравится"
+
+#: D:\share-buttons/share-buttons-options.php:419
+msgid "<b>Like buttons</b> output <b>ONLY</b> bottom page and <b>ONLY</b> in column!"
+msgstr "<b>Кнопки Нравится</b> выводятся <b>ТОЛЬКО</b> внизу страницы и <b>ТОЛЬКО</b> в столбик!"
+
+#: D:\share-buttons/share-buttons-options.php:425
+msgid "Show Vkontakte.ru Like Button"
+msgstr "Показывать кнопку Мне нравится для соц. сети Vkontakte.ru"
+
+#: D:\share-buttons/share-buttons-options.php:435
+msgid "<b>API ID:</b>"
+msgstr "<b>API ID:</b>"
+
+#: D:\share-buttons/share-buttons-options.php:435
+msgid "You can get your <b>\"api_id\"</b> on this <b><a href=\"http://vkontakte.ru/apps.php?act=add&site=1\">link</a></b>"
+msgstr "Вы можете получить ваш <b>\"api_id\"</b>, если передете по этой <b><a href=\"http://vkontakte.ru/apps.php?act=add&site=1\">ссылке</a></b>"
+
+#: D:\share-buttons/share-buttons-options.php:436
+msgid "<b>Required Field</b>"
+msgstr "<b>Обязательное поле</b>"
+
+#: D:\share-buttons/share-buttons-options.php:441
+msgid "Button with textable counter"
+msgstr "Кнопка с текстовым счетчиком"
+
+#: D:\share-buttons/share-buttons-options.php:446
+msgid "Button with mini counter"
+msgstr "Кнопка с миниатюрным счетчиком"
+
+#: D:\share-buttons/share-buttons-options.php:451
+msgid "Mini button"
+msgstr "Миниатюрная кнопка"
+
+#: D:\share-buttons/share-buttons-options.php:456
+msgid "Mini button and counter bottom"
+msgstr "Миниатюрная кнопка со счетчиком наверху"
+
+#: D:\share-buttons/share-buttons-options.php:461
+#: D:\share-buttons/share-buttons-options.php:511
+#: D:\share-buttons/share-buttons-options.php:565
+msgid "Verb to display"
+msgstr "Слово на кнопке"
+
+#: D:\share-buttons/share-buttons-options.php:464
+#: D:\share-buttons/share-buttons-options.php:568
+msgid "Like"
+msgstr "Мне нравится"
+
+#: D:\share-buttons/share-buttons-options.php:465
+msgid "Interesting"
+msgstr "Это интересно"
+
+#: D:\share-buttons/share-buttons-options.php:474
+msgid "Show Facebook Like Button"
+msgstr "Показывать кнопку Мне нравится для соц. сети Facebook"
+
+#: D:\share-buttons/share-buttons-options.php:483
+msgid "Layout style"
+msgstr "Тип кнопки"
+
+#: D:\share-buttons/share-buttons-options.php:483
+msgid "Determines the size and amount of social context next to the button"
+msgstr "Определите какую кнопку хотите использовать"
+
+#: D:\share-buttons/share-buttons-options.php:486
+msgid "standart"
+msgstr "standart"
+
+#: D:\share-buttons/share-buttons-options.php:487
+msgid "button_count"
+msgstr "button_count"
+
+#: D:\share-buttons/share-buttons-options.php:488
+msgid "box_count"
+msgstr "box_count"
+
+#: D:\share-buttons/share-buttons-options.php:493
+#: D:\share-buttons/share-buttons-options.php:544
+msgid "Show Faces"
+msgstr "Показывать профили"
+
+#: D:\share-buttons/share-buttons-options.php:493
+#: D:\share-buttons/share-buttons-options.php:544
+msgid "Show profile pictures below the button"
+msgstr "Показывать изображения профилей, которые нажали на кнопку (не забудьте поменять высоту, примерно 70 пикселей)"
+
+#: D:\share-buttons/share-buttons-options.php:496
+#: D:\share-buttons/share-buttons-options.php:547
+msgid "Show faces"
+msgstr "Показывать фото"
+
+#: D:\share-buttons/share-buttons-options.php:501
+#: D:\share-buttons/share-buttons-options.php:560
+msgid "Width"
+msgstr "Ширина"
+
+#: D:\share-buttons/share-buttons-options.php:501
+#: D:\share-buttons/share-buttons-options.php:560
+msgid "The width of the plugin, in pixels"
+msgstr "Ширина контейнера (НЕ КНОПКИ) в пикселах"
+
+#: D:\share-buttons/share-buttons-options.php:506
+msgid "Height"
+msgstr "Высота"
+
+#: D:\share-buttons/share-buttons-options.php:506
+msgid "The height of the plugin, in pixels"
+msgstr "Высота контейнера (НЕ КНОПКИ) в пикселах"
+
+#: D:\share-buttons/share-buttons-options.php:511
+#: D:\share-buttons/share-buttons-options.php:565
+msgid "The verb to display in the button. Currently only Like and Recommend are supported"
+msgstr "Слово, которое будет отображаться на кнопке: Мне нравится и Рекоммендую"
+
+#: D:\share-buttons/share-buttons-options.php:514
+msgid "like"
+msgstr "like"
+
+#: D:\share-buttons/share-buttons-options.php:515
+msgid "recommend"
+msgstr "recommend"
+
+#: D:\share-buttons/share-buttons-options.php:521
+msgid "Color scheme"
+msgstr "Цветовая схема"
+
+#: D:\share-buttons/share-buttons-options.php:521
+msgid "The color scheme of the plugin"
+msgstr "Цветовая схема: светлая или темная"
+
+#: D:\share-buttons/share-buttons-options.php:524
+msgid "light"
+msgstr "light"
+
+#: D:\share-buttons/share-buttons-options.php:525
+msgid "dark"
+msgstr "dark"
+
+#: D:\share-buttons/share-buttons-options.php:534
+msgid "Show Mailru Like Button"
+msgstr "Показывать кнопку Мне нравится для соц. сети Mail.ru"
+
+#: D:\share-buttons/share-buttons-options.php:552
+#: D:\share-buttons/share-buttons-options.php:555
+msgid "Show Text"
+msgstr "Показывать текст рекоммендации"
+
+#: D:\share-buttons/share-buttons-options.php:552
+msgid "Show text Name who recommed this post"
+msgstr ""
+
+#: D:\share-buttons/share-buttons-options.php:569
+msgid "Recommend"
+msgstr "Рекоммендую"
+
+#: D:\share-buttons/share-buttons.php:93
+msgid "Share buttons plugin requires Wordpress 2.8 or newer. <a href=\"http://codex.wordpress.org/Upgrading_WordPress\">Please update!</a>"
+msgstr ""
+
+#: D:\share-buttons/share-buttons.php:271
+msgid "Share Buttons Plugin Settings"
+msgstr "Настройки Share Buttons"
+
+#: D:\share-buttons/share-buttons.php:271
+msgid "Share Buttons"
+msgstr "Share Buttons"
+
+#: D:\share-buttons/share-buttons.php:337
+msgid "Class Share Buttons already declared!"
+msgstr "Класс Share Buttons уже вызван!"
+
+#: D:\share-buttons/share/share_customize_type.php:8
+msgid "Share"
+msgstr "Поделиться"
+
+#: D:\share-buttons/share/share_customize_type.php:25
+#: D:\share-buttons/share/share_customize_type.php:52
+#: D:\share-buttons/share/share_customize_type.php:79
+#: D:\share-buttons/share/share_customize_type.php:116
+#: D:\share-buttons/share/share_customize_type.php:152
+msgid "Post to MyWorld"
+msgstr "Опубликовать в Моём Мире"
+
+#: D:\share-buttons/share/share_customize_type.php:25
+#: D:\share-buttons/share/share_customize_type.php:52
+msgid "In My World"
+msgstr "В Мой Мир"
+
+#: D:\share-buttons/share/share_customize_type.php:31
+#: D:\share-buttons/share/share_customize_type.php:58
+#: D:\share-buttons/share/share_customize_type.php:89
+#: D:\share-buttons/share/share_customize_type.php:126
+#: D:\share-buttons/share/share_customize_type.php:162
+msgid "Post to Twitter"
+msgstr "Опубликовать в Twitter"
+
+#: D:\share-buttons/share/share_customize_type.php:34
+#: D:\share-buttons/share/share_customize_type.php:61
+#: D:\share-buttons/share/share_customize_type.php:94
+#: D:\share-buttons/share/share_customize_type.php:131
+#: D:\share-buttons/share/share_customize_type.php:167
+msgid "Post to Facebook"
+msgstr "Опубликовать в Facebook"
+
+#: D:\share-buttons/share/share_customize_type.php:34
+#: D:\share-buttons/share/share_customize_type.php:61
+msgid "Share to FB"
+msgstr "Поделиться"
+
+#: D:\share-buttons/share/share_customize_type.php:37
+#: D:\share-buttons/share/share_customize_type.php:64
+#: D:\share-buttons/share/share_customize_type.php:98
+#: D:\share-buttons/share/share_customize_type.php:135
+#: D:\share-buttons/share/share_customize_type.php:171
+msgid "Post to LiveJournal"
+msgstr "Опубликовать в LiveJournal"
+
+#: D:\share-buttons/share/share_customize_type.php:42
+#: D:\share-buttons/share/share_customize_type.php:69
+#: D:\share-buttons/share/share_customize_type.php:103
+#: D:\share-buttons/share/share_customize_type.php:140
+#: D:\share-buttons/share/share_customize_type.php:176
+msgid "Post to Google Buzz"
+msgstr "Опубликовать в Google-Buzz"
+
+#: D:\share-buttons/share/share_customize_type.php:84
+#: D:\share-buttons/share/share_customize_type.php:121
+#: D:\share-buttons/share/share_customize_type.php:157
+msgid "Post to Odnoklassniki"
+msgstr "Опубликовать в Одноклассники"
+

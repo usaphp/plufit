@@ -84,7 +84,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
       	<?php } ?>
         
     </div><!-- #site-info -->
-
     <div id="social-networks">
 	    <a href="http://vkontakte.ru/plufit" title="В Контакте" class="vkontakte">В Контакте</a>
 		<?php if(get_option('shaken_twitter')){ ?>
