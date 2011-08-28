@@ -32,21 +32,25 @@ function widget($args, $instance) {
 		$title = $instance['title'];
 		?>
         
-        
-        <?php echo $before_widget . $before_title . $title . $after_title; ?>
+
+		<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"></script>
+		<!-- VK Widget -->
+		<div id="vk_groups"></div>
+		<script type="text/javascript">
+		VK.Widgets.Group("vk_groups", {mode: 0, width: "310", height: "290"}, 29678436);
+		</script>
 		<div class="side_share">
 
 		<!-- Put this script tag to the <head> of your page -->
-		<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"></script>
 
 		<script type="text/javascript">
 		  VK.init({apiId: 2455824, onlyWidgets: true});
 		</script>
 		<div class="share_item">
-			<div id="vk_like"></div>
+			<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="plufit" data-lang="ru">Твитнуть</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 		</div>
 		<div class="share_item">
-			<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="plufit" data-lang="ru">Твитнуть</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			<div id="vk_like"></div>
 		</div>
 		<div class="clearfix"></div>
 		<!-- Put this div tag to the place, where the Like block will be -->
@@ -55,12 +59,6 @@ function widget($args, $instance) {
 		</script>
 		</div>
 
-		<!-- VK Widget -->
-		<div id="vk_groups"></div>
-		<script type="text/javascript">
-		VK.Widgets.Group("vk_groups", {mode: 0, width: "310", height: "290"}, 29678436);
-		</script>
-        <?php echo $after_widget; ?>
     <?php
 	} // #widget
 	

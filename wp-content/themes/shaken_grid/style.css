@@ -1243,5 +1243,5 @@ a.filter-btn, h1, #page h2, #page h3, label, a.comment span{
 #head-social-butons { float:left; padding-top:20px; }
 .article_share_ins { margin-bottom: 10px; }
 .share-icons.article_share_ins { background: none; }
-.side_share { margin-bottom: 15px; }
-	.share_item { float:left; margin-right: 10px; }
+.side_share { margin-bottom: 15px; padding-top:20px; }
+	.share_item { float:left; }
