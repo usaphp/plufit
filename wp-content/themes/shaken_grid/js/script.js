@@ -45,7 +45,7 @@ jQuery.noConflict();
 	});
 	
 	// MouseOver Events
-		
+	/*
 	$('.box').hover(function(){
 			$('.img-container img', this).fadeTo("fast", 0.65).addClass('box-hover');
 			$('.actions', this).fadeTo("fast", 1);
@@ -54,7 +54,7 @@ jQuery.noConflict();
 			$('img', this).fadeTo("fast", 1).removeClass('box-hover');
 			$('.actions', this).fadeTo("fast", 0)
 	});
-	
+	*/
 	// Sidebar Ads
 	$('.shaken_sidebar_ads a:odd img').addClass('last-ad');
 	
