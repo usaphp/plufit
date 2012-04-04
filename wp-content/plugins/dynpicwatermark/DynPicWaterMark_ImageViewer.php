@@ -7,10 +7,10 @@ $image = imagecreatefromjpeg('../../uploads/'.$_GET['path']);
 imagealphablending($watermark, false);
 imagesavealpha($watermark, true);
 
-imagecopymerge($watermark, $image, 10, 9, 0, 0, 181, 180, 100); //have to play with these numbers for it to work for you, etc.
+imagecopymerge($image, $watermark, 10, 9, 0, 0, 181, 180, 100); //have to play with these numbers for it to work for you, etc.
 
 header('Content-Type: image/png');
-imagepng($watermark);
+imagepng($image);
 
 imagedestroy($watermark);
 imagedestroy($image);
