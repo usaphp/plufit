@@ -4,8 +4,7 @@ header("Content-type: image/png");
 $watermark = imagecreatefrompng('watermarks/black-plufit.png');
 $image = imagecreatefromjpeg('../../uploads/'.$_GET['path']);
 
-imagealphablending($image, false);
-imagesavealpha($image, true);
+imagealphablending($watermark, true);
 
 imagecopymerge($image, $watermark, 10, 10, 0, 0, 193, 44, 100); //have to play with these numbers for it to work for you, etc.
 
