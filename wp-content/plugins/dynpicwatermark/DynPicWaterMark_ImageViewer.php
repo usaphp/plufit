@@ -2,7 +2,7 @@
 header("Content-type: image/png");
 
 $watermark = imagecreatefrompng('watermarks/black-plufit.png');
-$image = imagecreatefromjpg('../../uploads/'.$_GET['path']);
+$image = imagecreatefromjpeg('../../uploads/'.$_GET['path']);
 
 imagealphablending($watermark, false);
 imagesavealpha($watermark, true);
