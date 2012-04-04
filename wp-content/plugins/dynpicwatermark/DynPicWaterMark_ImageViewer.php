@@ -1,5 +1,21 @@
 <?php
 header("Content-type: image/png");
+
+$watermark = imagecreatefrompng('watermarks/black-plufit.png');
+$image = imagecreatefrompng('../../uploads/'.$_GET['path']);
+
+imagealphablending($watermark, false);
+imagesavealpha($watermark, true);
+
+imagecopymerge($watermark, $image, 10, 9, 0, 0, 181, 180, 100); //have to play with these numbers for it to work for you, etc.
+
+header('Content-Type: image/png');
+imagepng($watermark);
+
+imagedestroy($watermark);
+imagedestroy($image);
+
+/*
     // this script creates a watermarked image from an image file - can be a .jpg .gif or .png file
     // where watermark.gif is a mostly transparent gif image with the watermark - goes in the same directory as this script
     // where this script is named watermark.php
@@ -102,5 +118,5 @@ header("Content-type: image/png");
      imagecopyresized  ($dynpicwatermark_image, $dynpicwatermark_watermark,  $dynpicwatermark_startwidth, $dynpicwatermark_startheight, 0, 0, $dynpicwatermark_watermarkdesiredSizeW, $dynpicwatermark_watermarkdesiredSizeH, $dynpicwatermark_watermarkwidth , $dynpicwatermark_watermarkheight );
      imagejpeg($dynpicwatermark_image);
      imagedestroy($dynpicwatermark_image);
-     imagedestroy($dynpicwatermark_watermark);
+     imagedestroy($dynpicwatermark_watermark); */
  ?>
